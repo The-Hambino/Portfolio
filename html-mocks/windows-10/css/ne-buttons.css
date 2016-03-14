@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ===================== Newegg Buttons ===================== */
+
+/* Button - Primary */
+.ne_button,
+a.ne_button {
+	background: #f98d1d;
+		background-image: -webkit-linear-gradient(top, #fdd247, #f98d1d);
+		background-image: -moz-linear-gradient(top, #fdd247, #f98d1d);
+		background-image: -ms-linear-gradient(top, #fdd247, #f98d1d);
+		background-image: -o-linear-gradient(top, #fdd247, #f98d1d);
+		background-image: linear-gradient(to bottom, #fdd247, #f98d1d);
+	border: solid #e38528 2px;
+	border-radius: 7px;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+	color: #542f05;
+	display: inline-block; 
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+	margin: 0;
+	padding: 7px 10px 3px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: none;
+	white-space: nowrap;
+	}
+
+.ne_button:hover,
+a.ne_button:hover {
+	background: #fdd247;
+		background-image: -webkit-linear-gradient(top, #f98d1d, #fdd247);
+		background-image: -moz-linear-gradient(top, #f98d1d, #fdd247);
+		background-image: -ms-linear-gradient(top, #f98d1d, #fdd247);
+		background-image: -o-linear-gradient(top, #f98d1d, #fdd247);
+		background-image: linear-gradient(to bottom, #f98d1d, #fdd247);
+	color: #542f05;
+	text-decoration: none !important;
+	}
+
+.ne_button:active,
+a.ne_button:active {
+	background: #e68626;
+	color: #412810; 
+	}
+
+.ne_button::after,
+a.ne_button::after {
+	border-bottom: .35em solid transparent;
+	border-left: .55em solid #542f05;
+	border-right: .55em solid transparent;
+	border-top: .35em solid transparent;
+	content: "";
+	display: inline-block;
+	height: 0;
+	margin-left: .45em;
+	width: 0;
+	}
+
+/* Button - Sizes */
+.ne_button_small,
+a.ne_button_small {
+	border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	font-size: 10px;
+	line-height: 18px;
+	padding: 3px 3px 1px 8px;
+	}
+
+.ne_button_large,
+a.ne_button_large {
+	border-radius: 9px;
+		-webkit-border-radius: 9px;
+		-moz-border-radius: 9px;
+		border-radius: 9px;
+	font-size: 18px;
+	line-height: 18px;
+	padding: 12px 20px 8px 25px;
+	}
+
+.ne_button_xlarge,
+a.ne_button_xlarge {
+	border-radius: 11px;
+		-webkit-border-radius: 11px;
+		-moz-border-radius: 11px;
+		border-radius: 11px;
+	font-size: 24px;
+	line-height: 24px;
+	padding: 18px 25px 12px 35px;
+	border: solid #e38528 3px; 
+	}
+
+
+/* Button - Secondary Color */
+.ne_button_secondary,
+a.ne_button_secondary {
+	color: #002d6a;
+	background: #7b9cd0;
+		background-image: -webkit-linear-gradient(top, #bdd6f8, #7b9cd0);
+		background-image: -moz-linear-gradient(top, #bdd6f8, #7b9cd0);
+		background-image: -ms-linear-gradient(top, #bdd6f8, #7b9cd0);
+		background-image: -o-linear-gradient(top, #bdd6f8, #7b9cd0);
+		background-image: linear-gradient(to bottom, #bdd6f8, #7b9cd0);
+	border: solid #5f88bf 2px;
+	}
+
+.ne_button_secondary:hover,
+a.ne_button_secondary:hover {
+	color: #002d6a;
+	background: #bdd6f8;
+		background-image: -webkit-linear-gradient(top, #7b9cd0, #bdd6f8);
+		background-image: -moz-linear-gradient(top, #7b9cd0, #bdd6f8);
+		background-image: -ms-linear-gradient(top, #7b9cd0, #bdd6f8);
+		background-image: -o-linear-gradient(top, #7b9cd0, #bdd6f8);
+		background-image: linear-gradient(to bottom, #7b9cd0, #bdd6f8);
+	text-decoration: none !important;
+	}
+
+.ne_button_secondary:active,
+a.ne_button_secondary:active {
+	border-bottom: solid #5f88bf 0px;
+	border-left: solid #5f88bf 2px;
+	border-right: solid #5f88bf 2px;
+	border-top: solid #5f88bf 4px;
+	}
+
+.ne_button_secondary::after,
+a.ne_button_secondary::after {
+	border-bottom: .35em solid transparent;
+	border-left: .55em solid #002d6a;
+	border-right: .55em solid transparent;
+	border-top: .35em solid transparent;
+	content: "";
+	display: inline-block;
+	height: 0;
+	margin-left: .45em;
+	width: 0;
+	}
+
+
+/* ===================== Form Button ===================== */
+.form_btn {
+	padding-left: 10px !important;
+	}
+
+
+/* ==================== Newegg Arrows ==================== */
+
+/* Link - Primary on Light BG */
+.ne_arrow_01 {color: #5f88bf; font-weight: 700; text-decoration: none; margin: 0; transition: all 0.3s ease;}
+.ne_arrow_01:hover {color: #002d6a; text-decoration: underline;}
+.ne_arrow_01::after {content: ""; display: inline-block; margin-left: .45em; width: 0; height: 0; border-top: .35em solid transparent; border-left: .55em solid #5f88bf; border-right: .55em solid transparent; border-bottom: .35em solid transparent; transition: all 0.3s ease;}
+.ne_arrow_01:hover::after {border-left-color: #002d6a;}
+
+/* Link - Primary on Dark BG */
+.ne_arrow_02 {color: #5f88bf; font-weight: 700; text-decoration: none; margin: 0; transition: all 0.3s ease;}
+.ne_arrow_02:hover {color: #fff; text-decoration: underline;}
+.ne_arrow_02::after {content: ""; display: inline-block; margin-left: .45em; width: 0; height: 0; border-top: .35em solid transparent; border-left: .55em solid #5f88bf; border-right: .55em solid transparent; border-bottom: .35em solid transparent; transition: all 0.3s ease;}
+.ne_arrow_02:hover::after {border-left-color: #fff;}
+
+/* Link - Alternate */
+.ne_arrow_03 {color: #002d6a; font-weight: 700; text-decoration: none; margin: 0; transition: all 0.3s ease;}
+.ne_arrow_03:hover {color: #000; text-decoration: underline;}
+.ne_arrow_03::after {content: ""; display: inline-block; margin-left: .45em; width: 0; height: 0; border-top: .35em solid transparent; border-left: .55em solid #002d6a; border-right: .55em solid transparent; border-bottom: .35em solid transparent; transition: all 0.3s ease;}
+.ne_arrow_03:hover::after {border-left-color: #000;}
+
+/* Link - Alternate */
+.ne_arrow_04 {color: #b0becd; font-weight: 700; text-decoration: none; margin: 0; transition: all 0.3s ease;}
+.ne_arrow_04:hover {color: #fff; text-decoration: underline;}
+.ne_arrow_04::after {content: ""; display: inline-block; margin-left: .45em; width: 0; height: 0; border-top: .35em solid transparent; border-left: .55em solid #b0becd; border-right: .55em solid transparent; border-bottom: .35em solid transparent; transition: all 0.3s ease;}
+.ne_arrow_04:hover::after {border-left-color: #fff;}
+
+/* Link - Alternate */
+.ne_arrow_05 {color: #333; font-weight: 700; text-decoration: none; margin: 0; transition: all 0.3s ease;}
+.ne_arrow_05:hover {color: #000; text-decoration: underline;}
+.ne_arrow_05::after {content: ""; display: inline-block; margin-left: .45em; width: 0; height: 0; border-top: .35em solid transparent; border-left: .55em solid #333; border-right: .55em solid transparent; border-bottom: .35em solid transparent; transition: all 0.3s ease;}
+.ne_arrow_05:hover::after {border-left-color: #000;}
+
+/* Link - Alternate */
+.ne_arrow_06 {color: #000; font-weight: 700; text-decoration: none; margin: 0; transition: none;}
+.ne_arrow_06:hover {color: #fff; text-decoration: underline;}
+.ne_arrow_06::after {content: ""; display: inline-block; margin-left: .45em; width: 0; height: 0; border-top: .35em solid transparent; border-left: .55em solid #000; border-right: .55em solid transparent; border-bottom: .35em solid transparent; transition: none;}
+.ne_arrow_06:hover::after {border-left-color: #fff;}
+
+/* Link - Alternate */
+.ne_arrow_07 {color: #e5e5e5; font-weight: 700; text-decoration: none; margin: 0; transition: none;}
+.ne_arrow_07:hover {color: #fff; text-decoration: underline;}
+.ne_arrow_07::after {content: ""; display: inline-block; margin-left: .45em; width: 0; height: 0; border-top: .35em solid transparent; border-left: .55em solid #e5e5e5; border-right: .55em solid transparent; border-bottom: .35em solid transparent; transition: none;}
+.ne_arrow_07:hover::after {border-left-color: #fff;}

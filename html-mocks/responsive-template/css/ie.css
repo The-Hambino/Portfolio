@@ -1,0 +1,18 @@
+.header-inner,
+.footer-inner,
+.section-inner,
+.banner { max-width: 720px; }
+
+.items-scroll { overflow: auto!important; }
+
+.items-scroll-prev,
+.items-scroll-next { display: none; }
+
+.form-radiobox input[type="radio"] {
+	margin-top: 4px;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.form-radiobox-title:before,
+.form-radiobox-title:after { display: none; }

@@ -1,0 +1,99 @@
+/* for demonstration purposes only - REMOVE */
+.banner-hot-spot-01,
+.banner-hot-spot-02 {background-color: rgba(0,0,0,.2);}
+h2.demo {background-color: #e5e5e5; text-align: center; padding: 0.5em;}
+.demo-code {font-family: monospace; font-weight: bold; background-color: #e5e5e5;}
+
+/* template.css overwrites - use only if needed
+================================*/
+
+/* define as needed to match vendor assets */
+.html-banner h1 {font-size: 2em; line-height: 1.35; margin: 1.25em 0 0.25em 0;}
+.html-banner h2 {font-size: 1.5em; line-height: 1.35; margin: 1.25em 0 0.25em 0;}
+.html-banner h3,
+.html-banner h4,
+.html-banner h5,
+.html-banner h6 {font-weight: bold; font-size: 1.1em; line-height: 1.35; margin: 0.75em 0 0.25em 0;}
+.html-banner p {font-size: 1.1em; line-height: 1.35; margin: 0.75em 0;}
+.html-banner ul, 
+.html-banner ol,
+.html-banner dl {margin: 0.75em 0;}
+.html-banner dt,
+.html-banner dd,
+.html-banner li {font-size: 1.1em; line-height: 1.35; margin: 0.5em 0;}
+.html-banner li h1, .html-banner li h2, .html-banner li h3, .html-banner li h4, .html-banner li h5, .html-banner li h6,
+.html-banner li p {font-size: inherit;}
+.html-banner .text-wrap a,
+.html-banner .text-wrap a:link,
+.html-banner .text-wrap a:visited,
+.html-banner .text-wrap a:active {text-decoration: underline; color: #5f88bf;}
+.html-banner .text-wrap a:hover {color: #002d6a;}
+.banner-img {background-size: 190%;}
+
+/* custom CSS on a per project basis
+================================*/
+
+/* blank classes for defining hot spot dimensions */
+#content-section-ZZ.banner-XXX .banner-hot-spot-01 {top: auto; right: auto; bottom: auto; left: auto; width: auto; height: auto;}
+#content-section-ZZ.banner-XXX .banner-hot-spot-02 {top: auto; right: auto; bottom: auto; left: auto; width: auto; height: auto;}
+/* blank class for assigning a content background */
+#content-section-ZZ .banner-img-XXX {background-image: url(../images/content-XXX-ZZ.jpg);}
+
+/* custom CSS examples on a per project basis
+================================*/
+
+#content-section-01.banner-650 .banner-hot-spot-01 {top: 5%; right: auto; bottom: auto; left: 5%; width: 50%; height: 90%;}
+#content-section-01.banner-650 .banner-hot-spot-02 {top: 5%; right: 5%; bottom: auto; left: auto; width: 20%; height: 20%;}
+#content-section-01 .banner-img-650 {background-image: url(../images/content-650-01.jpg);}
+
+#content-section-02.banner-850 .banner-hot-spot-01 {top: 5%; right: 5%; bottom: auto; left: auto; width: 90%; height: 50%;}
+#content-section-02.banner-850 .banner-hot-spot-02 {top: auto; right: auto; bottom: 5%; left: 5%; width: 90%; height: 35%;}
+#content-section-02 .banner-img-850 {background-image: url(../images/content-850-02.jpg);}
+
+
+/* responsive CSS on a per project basis
+================================*/
+
+@media only screen and (max-width: 1024px) {
+	/* insert responsive CSS for screens below 1024px */
+}
+
+@media only screen and (min-width: 375px) {
+	/* insert responsive CSS for screens above 375px */
+}
+
+@media only screen and (min-width: 481px) {
+	/* insert responsive CSS for screens above 481px */
+}
+
+@media only screen and (min-width: 641px) {
+	/* insert responsive CSS for screens above 641px */
+	
+	.banner-img {background-size: 100.25%;}
+	
+	/* custom CSS on a per project basis
+	================================*/
+	
+	/* blank classes for defining hot spot dimensions */
+	#content-section-ZZ.banner-XXX .banner-hot-spot-01 {top: auto; right: auto; bottom: auto; left: auto; width: auto; height: auto;}
+	#content-section-ZZ.banner-XXX .banner-hot-spot-02 {top: auto; right: auto; bottom: auto; left: auto; width: auto; height: auto;}
+	/* blank class for assigning a content background */
+	#content-section-ZZ .banner-img-XXX {background-image: url(../images/content-XXX-ZZ.jpg);}
+	
+	/* custom CSS examples on a per project basis
+	================================*/
+	#content-section-01.banner-650 .banner-hot-spot-01 {top: 5%; right: 5%; bottom: auto; left: auto; width: 50%; height: 90%;}
+	#content-section-01.banner-650 .banner-hot-spot-02 {top: 5%; right: auto; bottom: auto; left: 5%; width: 20%; height: 20%;}
+	
+	#content-section-02.banner-850 .banner-hot-spot-01 {top: 5%; right: 5%; bottom: auto; left: auto; width: 20%; height: 20%;}
+	#content-section-02.banner-850 .banner-hot-spot-02 {top: 5%; right: auto; bottom: auto; left: 5%; width: 50%; height: 90%;}	
+}
+
+@media only screen and (min-width: 769px) {
+	/* insert responsive CSS for screens above 769px */
+	
+}
+
+@media only screen and (min-width: 1025px) {
+	/* insert responsive CSS for screens above 1025px */
+}

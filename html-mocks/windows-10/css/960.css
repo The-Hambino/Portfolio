@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ===================== Display > 960px Overwrites ===================== */
+
+body {
+	min-width: 950px;
+	}
+
+/* ====================================================== */
+/* ===================== Grid Style ===================== */
+/* ====================================================== */
+.container_full {
+	width: 950px;
+	}
+
+.size_medium h2 {
+	bottom: 15px;
+	padding: 0 15px;
+	}
+
+
+/* ====================================================== */
+/* ================ Grid Content Styling ================ */
+/* ====================================================== */
+
+
+.preview_19 h2 {
+	background-color: transparent;
+	color: #000;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: auto;
+	}
+
+/* ====================================================== */
+/* ====================== Revealed ====================== */
+/* ====================================================== */
+
+.innerContainer_preview h1 {
+	margin: 15px 0 30px 30px;
+	}
+
+.content_hide {
+	margin: 0;
+	opacity: 0;
+	padding-bottom: 0;
+	width: 0;
+	}
+
+.container_preview {
+	padding: 30px;
+	}
+
+.close_preview, 
+.close_preview_02,
+.close_preview_03,
+.close_preview_04,
+.close_preview_05,
+.close_preview_06,
+.close_preview_07 {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 45px;
+	height: 45px;
+	}
+
+.product_title {
+	font-size: 16px;
+	}
+
+
+/* ====================================================== */
+/* ======================= Header ======================= */
+/* ====================================================== */
+
+
+/* ====================================================== */
+/* ======================== Hero ======================== */
+/* ====================================================== */
+
+.countdown_cntr #cntdwn {
+	position: absolute;
+	right: 86px;
+	top: 73px;
+	text-align: center;
+	}
+
+.countdownLi {
+	position: relative;
+	display: block;
+	width: 390px;
+	height: 220px;
+	text-align: center;
+	}
+
+.launchText {
+	position: absolute;
+	bottom: 20px;
+	left: auto;
+	display: block;
+	width: 100%;
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	}
+
+/* ====================================================== */
+/* ====================== Shop Nav ====================== */
+/* ====================================================== */
+.container_shop_nav {
+	padding: 10px 0 20px 0;
+	top: -100px;
+	margin-bottom: -100px;
+	}
+
+.container_shop_nav h3 {
+	height: inherit;
+	}
+
+
+/* ====================================================== */
+/* ======================= Footer ======================= */
+/* ====================================================== */
+.top_link {
+	display: none;
+	}
+
+footer .copyright span {
+	clear: none;
+	margin-top: 0;
+	padding-left: 10px;
+	}
+
+footer .copyright a:nth-child(2) {
+	border-right: 2px solid #b0becd;
+	}
+
+
+/* ====================================================== */
+/* ================= Featured LP Content ================ */
+/* ====================================================== */
+.content_grid_shift {
+	position: relative;
+	margin-top: -584px;
+	}
+
+.container_back {
+	height: 128px;
+	}
+

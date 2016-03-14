@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ===================== Display > 720px Overwrites ===================== */
+
+body {
+	min-width: 720px;
+	}
+
+/* ====================================================== */
+/* ===================== Grid Style ===================== */
+/* ====================================================== */
+.container_full {
+	width: 720px;
+	}
+
+.size_small,
+.size_medium,
+.size_large,
+.size_xlarge,
+.container_medium {
+	margin-bottom: .5%;
+	margin-left: .5%;
+	margin-right: .5%;
+	margin-top: .5%;
+	}
+
+.size_small {
+	margin-bottom: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2%;
+	width: 48%;
+	}
+
+.size_medium {
+	width: 24%;
+	}
+
+.size_large {
+	width: 49%;
+	}
+
+.container_medium {
+	width: 24%;
+	}
+
+.size_medium h2 {
+	bottom: 10px;
+	padding: 0 10px;
+	}
+
+.full_link {
+	display: none;
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	}
+
+
+/* ====================================================== */
+/* ================ Grid Content Styling ================ */
+/* ====================================================== */
+
+
+.preview_19 h2 {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 90%;
+	}
+
+
+/* ====================================================== */
+/* ====================== Revealed ====================== */
+/* ====================================================== */
+.content_preview {
+	margin: .5%;
+	width: 99%;
+	}
+
+.content_hide {
+	margin: 0;
+	opacity: 0;
+	padding-bottom: 0;
+	width: 0;
+	}
+
+
+/* ====================================================== */
+/* ======================= Header ======================= */
+/* ====================================================== */
+header {
+	background: #ece7e1 url('../img/bg_header.gif') repeat-x bottom left;
+	display: block;
+	height: 114px;
+	width: 100%;
+	}
+
+header .logo_newegg {
+	height: 114px;
+	width: 220px;
+	}
+
+
+/* ====================================================== */
+/* ======================== Hero ======================== */
+/* ====================================================== */
+
+.countdown_cntr #cntdwn {
+	position: absolute;
+	right: 67px;
+	top: 57px;
+	text-align: center;
+	}
+
+.countdownLi {
+	position: relative;
+	display: block;
+	width: 296px;
+	height: 167px;
+	text-align: center;
+	}
+
+.launchText {
+	position: absolute;
+	bottom: 20px;
+	left: auto;
+	display: block;
+	width: 100%;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	}
+
+
+
+
+
+/* ====================================================== */
+/* ====================== Shop Nav ====================== */
+/* ====================================================== */
+.container_shop_nav {
+	background-color: transparent;
+	position: relative;
+	top: -70px;
+	margin-bottom: -70px;
+	}
+
+.container_shop_nav li {
+	border-bottom: none;
+	padding-bottom: 0;
+	text-align: center;
+	width: auto;
+	}
+
+.container_shop_nav li:nth-child(1) {width: 18%;}
+.container_shop_nav li:nth-child(2) {width: 14%;}
+.container_shop_nav li:nth-child(3) {width: 18%;}
+.container_shop_nav li:nth-child(4) {width: 25%;}
+.container_shop_nav li:nth-child(5) {width: 24%;}
+
+.container_shop_nav h3 {
+	display: block;
+	float: none;
+	height: 30px;
+	padding-bottom: 10px;
+	padding-top: 0;
+	}
+
+.container_shop_nav a {
+	float: none;
+	}
+
+
+/* ====================================================== */
+/* ======================= Footer ======================= */
+/* ====================================================== */
+footer .email_signup {
+	display: block;
+	float: left;
+	width: 70%;
+	}
+
+footer .ne_social {
+	display: block;
+	float: right;
+	margin-top: 0;
+	width: 25%;
+	}
+
+footer .copyright {
+	float: left;
+	margin-top: 30px;
+	}
+
+footer .copyright span {
+	clear: left;
+	padding-left: 0;
+	width: auto;
+	}
+
+
+/* ====================================================== */
+/* ================= Featured LP Content ================ */
+/* ====================================================== */
+.content_grid_shift {
+	position: relative;
+	margin-top: -449px;
+	top: 30px;
+	}
+
+.container_back {
+	height: 97px;
+	margin-bottom: 30px;
+	}
+
+.article_img_75 {
+	width: 75%;
+	height: auto;
+	margin-left: 12.5%;
+	}
+

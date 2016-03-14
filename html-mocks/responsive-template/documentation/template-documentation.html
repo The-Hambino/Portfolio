@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documentation for Vendor Responsive Template</title>
+
+<style type="text/css">
+	pre{
+  		font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  		margin-bottom: 10px;
+  		overflow: auto;
+  		width: auto;
+  		padding: 5px;
+  		background-color: #eee;
+  		width: 650px!ie7;
+  		padding-bottom: 20px!ie7;
+  		max-height: 600px;
+		color: #000 !important;
+	}
+	body {padding: 30px 5%; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;}
+	blockquote {border: 1px solid #ddd; margin: 0; padding: 2em 1em; overflow: auto;}
+	code {display: none;}
+	.code {font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;}
+	h1 {font-size: 2em; background-color: #e5e5e5; text-align: center; padding: 30px 15px;}
+	h2 {font-size: 2em; margin: 50px 0 10px 0;}
+	h3.code {margin: 50px 0 0 0; padding: 0;}
+	.flag-icon {position: relative; bottom: -7px; left: auto;}
+</style>
+
+</head>
+
+<body>
+
+
+<h1>Documentation for Vendor Responsive Template</h1>
+
+<h2>HTML Structure for Text/Image/Video Sections</h2>
+
+<blockquote>
+	<img src="images/html-structure.png" />
+	<code>
+		<p>Need Rainbow JS?</p>
+		<p>https://craig.is/making/rainbows</p>
+		<div class="html-banner-wrap">
+			<div class="html-banner">
+				<div class="row">
+					<div class="img-wrap inline-img-33 pull-left"></div>
+					<div class="text-wrap inline-text-66 pull-right"></div>
+				</div>
+			</div>
+		</div>
+	</code>
+	<p class="caption">The above code would create a new row with an image that is 33% wide on the left and a block of text that is 66% wide on the right.</p>
+</blockquote>
+
+<h2>HTML Structure for Product Sections</h2>
+
+<blockquote>
+	<img src="images/html-product.png" />
+	<code>
+		<div class="html-banner">
+			<div class="row">
+				<div class="product-wrap inline-product-33 pull-left">
+					<div class="item-cell">
+						<div class="item-container fix">
+							<a href="product_link" class="item-img"><img class="lazy-img" src="images/s.png" data-original="insert_img_url"></a>
+							<div class="item-info">
+								<h4 class="item-title"><a href="product_link">Product Title</a></h4>
+								<div class="price" id="ngl_000"></div>
+								<div class="item-promo">
+									<div class="item-promo-title"><span>Promo Code</span></div>
+									<div class="item-promo-code">XXXXXXXXX<span class="item-promo-code-save">for an additional $XX off</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="img-wrap inline-img-66 pull-right">
+					<img src="images/inline-img-66.jpg" alt="Describe_image" />
+				</div>
+			</div><!-- END .row -->
+		</div><!-- END .html-banner -->
+	</code>
+	<p class="caption">The above code will create a new row with a product cell that is 33% wide on the left and an image 66% wide on the right.</p>
+	<p class="caption">* Note: The HTML for the <span class="code">div.item-cell</span> is identical to the item-cell used at the bottom of the page in the <span class="code">ul.items-grid</span></p>
+</blockquote>
+
+<h2>HTML Structure for Divider Sections</h2>
+
+<blockquote>
+	<img src="images/html-divider.png" />
+	<code>
+		<div class="html-banner-wrap">
+			<div class="html-banner">
+				<div class="row">
+				<div class="text-wrap inline-text-100">
+					<h2 class="demo">Explaining the Four Content Types</h2>
+				</div>
+			</div>
+			</div>
+			<div class="divider-wrap divider-img-100 spacer-30">
+				<img src="images/divider-img-100.jpg" alt="Describe_image" />
+			</div>
+			<div class="html-banner">
+				<div class="row">
+				<div class="text-wrap inline-text-100">
+					<h2 class="demo">Explaining the Four Content Types</h2>
+				</div>
+			</div>
+			</div>
+		</div>
+	</code>
+	<p class="caption">The above code would create a divider image with an html banner section above and below it.</p>
+	<p class="caption">* Note: The divider-wrap class doesn't use the html-banner class for a wrapper, allowing the image to be full-bleed.</p>
+</blockquote>
+
+<h2>HTML Structure for Visual Content Blocks</h2>
+
+<blockquote>
+	<img src="images/html-content-block.png" />
+	<code>
+		<!-- CONTENT SECTION 650 -->
+    	<div id="content-section-01" class="banner-650">
+    	    <a target="_blank" href="hot_spot_url" title="LinkTitle" class="banner-hot-spot-01"></a>
+			<a target="_blank" href="hot_spot_url" title="LinkTitle" class="banner-hot-spot-02"></a>
+			<div class="banner-img-650"></div>
+		</div>
+	</code>
+	<p class="caption">The above code would create a visual content block 650px tall with two hot spot links.</p>
+</blockquote>
+
+<h2 id="contentBlock">CSS for Visual Content Blocks</h2>
+
+<blockquote>
+	<img src="images/css-content-blocks.png" />
+	<code>
+		/* blank class for assigning content background */
+		#content-section-ZZ .banner-img-XXX {background-image: url(../images/content-XXX-ZZ.jpg);}
+	</code>
+	<p class="caption">The above CSS is used to assign background images within the "Visual Content Blocks."</p>
+	<p class="caption">"XXX" is to be replaced with the height of the content block section - 650 (px) or 850 (px).</p>
+	<p class="caption">"ZZ" is to be replaced with the a two digit number between "01" - "10". Be sure to add the corresponding id="content-section-ZZ" to the content block section you are adding.</p>
+</blockquote>
+
+<h2 id="hotspots">CSS for Hot Spot Links</h2>
+
+<blockquote>
+	<img src="images/css-hot-spots.png" />
+	<code>
+		/* blank classes for defining hot spot dimensions */
+		#content-section-ZZ.banner-XXX .banner-hot-spot-01 {top: auto; right: auto; bottom: auto; left: auto; width: auto; height: auto;}
+		#content-section-ZZ.banner-XXX .banner-hot-spot-02 {top: auto; right: auto; bottom: auto; left: auto; width: auto; height: auto;}
+	</code>
+	<p class="caption">The above CSS is used to define hot spot dimensions and positions within the "Visual Content Blocks."</p>
+	<p class="caption">Define top/bottom and left/right in percentages. Define width/height in percentages.</p>
+	<p class="caption">Both positioning and dimension percentage values will need to be updated for the mobile version.</p>
+	<p class="caption">The "XXX" and "ZZ" should be replaced with the same values used when defining the background image.</p>
+</blockquote>
+
+<h2>Layout Classes</h2>
+
+<h3 class="code">.html-banner-wrap <img class="flag-icon" src="images/flag-required.png" alt="Required class" /></h3>
+<p>Use this class to wrap all custom HTML content.</p>
+
+<h3 class="code">.html-banner <img class="flag-icon" src="images/flag-required.png" alt="Required class" /></h3>
+<p>Use this class to wrap inline image, text and video sections. For any content that should be truly 100% wide (divider images, full-width videos) and touch the edges of the viewport, remove this class.</p>
+
+<h3 class="code">.row <img class="flag-icon" src="images/flag-required.png" alt="Required class" /></h3>
+<p>Use this class to group elements within a single row.</p>
+
+<h3 class="code">.XXXXX-wrap <img class="flag-icon" src="images/flag-required.png" alt="Required class" /></h3>
+<p class="code">.img-wrap, .text-wrap, .product-wrap, .video-box-wrap, .divider-wrap</p>
+<p>Use one of these classes to wrap your content based on it's type: inline image, text, inline-product, video or divider image.</p>
+
+<h3 class="code">.pull-left <img class="flag-icon" src="images/flag-optional.png" alt="Optional class" /></h3>
+<p>Use this class to pull your image, text or video section to the left side of the row.</p>
+
+<h3 class="code">.pull-right <img class="flag-icon" src="images/flag-optional.png" alt="Optional class" /></h3>
+<p>Use this class to pull your image, text or video section to the right side of the row.</p>
+
+<h3 class="code">.inline-img-XX <img class="flag-icon" src="images/flag-required.png" alt="Required class" /></h3>
+<p class="code">.inline-img-20, .inline-img-33, .inline-img-50, .inline-img-66, .inline-img-80, .inline-img-100</p>
+<p>Use one of these classes on the containing wrap of your image to define its width: 20%, 33%, 50%, 66%, 80% or 100%. These percentage widths are for desktop resolutions. Mobile resolutions are optimized for readability and the related CSS is automatic.</p>
+
+<h3 class="code">.inline-text-XX <img class="flag-icon" src="images/flag-required.png" alt="Required class" /></h3>
+<p class="code">.inline-text-20, .inline-text-33, .inline-text-50, .inline-text-66, .inline-text-80, .inline-text-100</p>
+<p>Use one of these classes on the containing wrap of your text block to define its width: 20%, 33%, 50%, 66%, 80% or 100%. These percentage widths are for desktop resolutions. Mobile resolutions are optimized for readability and the related CSS is automatic.</p>
+
+<h3 class="code">.inline-product-XX <img class="flag-icon" src="images/flag-required.png" alt="Required class" /></h3>
+<p class="code">.inline-product-20, .inline-product-33, .inline-product-50, .inline-product-66, .inline-product-80, .inline-product-100</p>
+<p>Use one of these classes on the containing wrap of your product block to define its width: 20%, 33%, 50%, 66%, 80% or 100%. These percentage widths are for desktop resolutions. Mobile resolutions are optimized for readability and the related CSS is automatic.</p>
+
+<h3 class="code">.inline-video-XX <img class="flag-icon" src="images/flag-required.png" alt="Required class" /></h3>
+<p class="code">.inline-video-20, .inline-video-33, .inline-video-50, .inline-video-66, .inline-video-80, .inline-video-100</p>
+<p>Use one of these classes on the containing wrap of your video to define its width: 20%, 33%, 50%, 66%, 80% or 100%. These percentage widths are for desktop resolutions. Mobile resolutions are optimized for readability and the related CSS is automatic.</p>
+
+<h3 class="code">.divider-img-100 <img class="flag-icon" src="images/flag-required.png" alt="Required class" /></h3>
+<p>Use this class on the containing wrap of your dividing image to define its width. Dividing images can only be 100% wide.</p>
+
+<h2>Helper Classes</h2>
+
+<h3 class="code">.constrain-XXX <img class="flag-icon" src="images/flag-optional.png" alt="Optional class" /></h3>
+<p class="code">.constrain-500, .constrain-600, .constrain-700, .constrain-800, .constrain-900, .constrain-1000</p>
+<p>Use this class to constrain the maximum width of the element to the pixel value above.</p>
+
+<h3 class="code">.spacer-XX <img class="flag-icon" src="images/flag-optional.png" alt="Optional class" /></h3>
+<p class="code">.spacer-10, .spacer-20, .spacer-30, .spacer-40, .spacer-50, .spacer-60, .spacer-70, .spacer-80, .spacer-90, .spacer-100</p>
+<p>Use this class to add space before the element. The space added is defined in pixels.</p>
+
+</body>
+</html>

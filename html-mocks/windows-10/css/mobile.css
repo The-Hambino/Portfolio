@@ -1,0 +1,1157 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ===================== Display < 500px, Mobile/Base Styles ===================== */
+
+body {
+	background-color: #000;
+	min-width: 100%;
+	overflow-x: hidden;
+	}
+
+/* ====================================================== */
+/* ===================== Grid Style ===================== */
+/* ====================================================== */
+.content_grid {
+	padding: 0 30px 30px 30px;
+	margin-top: -60px;
+	}
+
+.container_full {
+	margin-left: auto; 
+	margin-right: auto;
+	width: 100%;
+	}
+
+.row_01,
+.row_02,
+.row_03,
+.row_04,
+.row_05,
+.row_06,
+.row_07 {
+	overflow: auto;
+	overflow-x: hidden;
+	width: 100%;
+	}
+
+.size_small,
+.size_medium,
+.size_large,
+.size_xlarge,
+.container_medium {
+	display: inline;
+	float: left;
+	margin-bottom: 4%;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 4%;
+	position: relative;
+	transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+
+.size_small {
+	background-color: #eee;
+	margin-bottom: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2%;
+	width: 48%;
+	}
+
+.size_medium {
+	background-color: #ccc;
+	width: 24%;
+	width: 100%; /* Mobile */
+	}
+
+.size_large {
+	background-color: #aaa;
+	width: 49%;
+	width: 100%; /* Mobile */
+	}
+
+.size_xlarge {
+	background-color: #111;
+	width: 100%;
+	}
+
+.container_medium {
+	background-color: transparent;
+	overflow: hidden;
+	width: 24%;
+	width: 100%; /* Mobile */
+	}
+
+.container_medium>div:nth-child(1) {
+	margin-left: 0;
+	margin-top: 0;
+	}
+
+.container_medium>div:nth-child(2) {
+	margin-top: 0;
+	margin-right: 0;
+	}
+	
+.container_medium>div:nth-child(3) {
+	margin-bottom: 0;
+	margin-left: 0;
+	}
+	
+.container_medium>div:nth-child(4) {
+	margin-bottom: 0;
+	margin-right: 0;
+	}
+
+.aspect_ratio {
+	height: 0;
+	padding-bottom: 100%;
+	}
+	
+.aspect_ratio_2_1 {
+	height: 0;
+	padding-bottom: 48.979591%; /* 2-to-1 ratio, including 1 gutter */
+	}
+	
+.aspect-ratio_4_1 {
+	height: 0;
+	padding-bottom: 24%; /* 4-to-1 ratio, including 3 gutters */
+	}
+	
+.aspect_content {
+	bottom: 0;
+	display: flex;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 98;
+	}
+
+.preview_link {
+	bottom: 0;
+	cursor: pointer;
+	display: flex;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 99;
+	}
+
+.full_link {
+	bottom: 0;
+	cursor: pointer;
+	display: flex;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	}
+
+.more_link {
+	background-color: #e5e5e5;
+	bottom: 0;
+	font-size: 16px;
+	height: auto;
+	left: 0;
+	line-height: 1.5;
+	padding: 10px 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	}
+
+.size_small h2 {
+	color: #fff;
+	display: block;
+	font-size: 90%;
+	padding: 0 5px;
+	margin: 0 auto;
+	text-align: center;
+	}
+
+.size_medium h2 {
+	bottom: 20px;
+	left: 0;
+	padding: 0 20px;
+	position: absolute;
+	}
+
+.size_large h2 {
+	bottom: 20px;
+	left: 0;
+	padding: 0 20px;
+	position: absolute;
+	}
+
+
+/* ====================================================== */
+/* ================ Grid Content Styling ================ */
+/* ====================================================== */
+
+.preview_01 .aspect_content {
+	background: transparent url(../img/box_directX12.png) no-repeat center center;
+	background-color: #4cc8f2;
+	background-size: cover;
+	}
+
+.preview_02 .aspect_content {
+	background: transparent url(../img/box_upgradeBasics.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	}
+
+.preview_03 .aspect_content {
+	background: transparent url(../img/box_whatsNew.jpg) no-repeat center center;
+	background-color: #3f6cae;
+	background-size: cover;
+	}
+.preview_03 h2 {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 95%;
+	}
+
+.preview_04 .aspect_content {
+	background: transparent url(../img/box_xboxone.png) no-repeat center center;
+	background-color: #3fb34f;
+	background-size: cover;
+	}
+
+.preview_05 .aspect_content {
+	background: transparent url(../img/box_2wide_visualStyle.jpg) no-repeat center center;
+	background-color: #002f72;
+	background-size: 100%;
+	color: #fff;
+	}
+
+.preview_05 img {
+	width: 100%;
+	height: 100%;
+	}
+
+.preview_05 h2 {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 100%;
+	}
+
+.preview_06 .aspect_content {
+	background: transparent url(../img/box_2wide_fourGames.jpg) no-repeat center center;
+	background-color: #009b8b;
+	background-size: cover;
+	}
+
+.preview_06 h2 {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 100%;
+	}
+
+.preview_07 .aspect_content {
+	background-color: #ef662f;
+	}
+
+.preview_08 .aspect_content {
+	background-color: #446cb1;
+	}
+
+.preview_09 .aspect_content {
+	background-color: #008544;
+	}
+
+.preview_10 .aspect_content {
+	background-color: #bb238c;
+	}
+
+.preview_11 .aspect_content {
+	background: transparent url(../img/box_2wide_featuredProducts.jpg) no-repeat center center;
+	background-size: cover;
+	}
+
+.preview_11 h2 {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 90%;
+	}
+
+.preview_22 .aspect_content {
+	background: transparent url(../img/box_featuredABS.jpg) no-repeat center center;
+	background-size: cover;
+	}
+
+
+
+
+
+.preview_12 .aspect_content {
+	background: transparent url(../img/box_2wide_sevenFlavors.jpg) no-repeat center center;
+	background-size: cover;
+	}
+
+.preview_12 h2 {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 100%;
+	}
+
+.preview_13 .aspect_content {
+	background: transparent url(../img/box_2wide_featuredVideos.jpg) no-repeat center center;
+	background-size: 100%;
+	color: #fff;
+	}
+
+.preview_13 h2 {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 100%;
+	}
+
+.preview_14 .aspect_content {
+	background: transparent url(../img/box_videoEdge.jpg) no-repeat center center;
+	background-size: 100%;
+	color: #fff;
+	}
+
+.preview_14 h2 {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 100%;
+	}
+
+.preview_15 .aspect_content {
+	background-color: #ef662f;
+	}
+
+.preview_16 .aspect_content {
+	background-color: #446cb1;
+	}
+
+.preview_17 .aspect_content {
+	background-color: #008544;
+	}
+
+.preview_18 .aspect_content {
+	background-color: #bb238c;
+	}
+
+.preview_19 .aspect_content {
+	background: transparent url(../img/box_oculus.jpg) no-repeat center center;
+	background-size: 100%;
+	color: #000;
+	}
+	
+.preview_20 .aspect_content {
+	background: transparent url(../img/box_systemRequirements.jpg) no-repeat center center;
+	background-size: 100%;
+	color: #000;
+	}
+
+.preview_21 .aspect_content {
+	background: transparent url(../img/box_2wide_reserveVideo.jpg) no-repeat center center;
+	background-color: #000;
+	background-size: 100%;
+	color: #fff;
+	}
+
+.preview_21 h2 {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 100%;
+	}
+
+
+.preview_05_03 .aspect_content {
+	background: transparent url(../img/box_2wide_orderComputers.jpg) no-repeat center center;
+	background-color: #999;
+	background-size: cover;
+	overflow: hidden;
+	}
+
+.preview_05_03 h2 {
+	background-color: rgba(255, 255, 255, .75);
+	color: #333;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 100%;
+	}	
+
+.preview_01_03 .aspect_content {
+	background: transparent url(../img/box_orderIntel.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	}
+
+.preview_03_02 .aspect_content {
+	background: transparent url(../img/box_2wide_orderDIY.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	overflow: hidden;
+	}
+
+.preview_03_02 h2 {
+	background-color: rgba(255, 255, 255, .75);
+	color: #333;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 100%;
+	}
+
+.preview_06_01 .aspect_content {
+	background: transparent url(../img/box_2wide_videoJoe.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	}
+
+.preview_06_01 h2 {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 100%;
+	}
+
+.preview_06_02 .aspect_content {
+	background: transparent url(../img/box_orderMonitors.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	}
+
+.preview_06_03 .aspect_content {
+	background: transparent url(../img/box_orderMotherboards.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	}
+
+.preview_07_03 .aspect_content {
+	background: transparent url(../img/box_orderMemory.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	}
+
+.preview_07_04 .aspect_content {
+	background: transparent url(../img/box_orderCPUs.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	}
+
+.preview_02_02 .aspect_content {
+	background: transparent url(../img/box_orderSSDs.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	}
+
+.preview_02_03 .aspect_content {
+	background: transparent url(../img/box_orderSeagate.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	}
+
+.preview_04_03 .aspect_content {
+	background: transparent url(../img/box_orderCases.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	}
+
+.preview_04_03 h2 {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 100%;
+	}
+
+.preview_04_04 .aspect_content {
+	background: transparent url(../img/box_orderSoftware.jpg) no-repeat center center;
+	background-color: #fff;
+	background-size: cover;
+	}
+
+.preview_01_03 h2, 
+.preview_22 h2, 
+.preview_06_02 h2, 
+.preview_06_03 h2, 
+.preview_02_02 h2,
+.preview_02_03 h2,
+.preview_04_03 h2,
+.preview_04_04 h2, 
+.preview_07_03 h2,
+.preview_07_04 h2 {
+	background-color: rgba(0, 0, 0, .4);
+	color: #fff;
+	bottom: 0 !important;
+	padding: 15px !important;
+	display: block;
+	width: 100%;
+	}	
+	
+/* ====================================================== */
+/* ====================== Revealed ====================== */
+/* ====================================================== */
+.container_preview {
+	display: block;
+	position: relative;
+	padding: 15px;
+	}
+	
+.outerContainer_preview {
+	bottom: 0;
+	display: block;
+	left: 0;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	}
+	
+.innerContainer_preview {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	}
+
+.innerContainer_preview h1 {
+	margin: 15px 0 15px 15px;
+	}
+
+.close_preview,
+.close_preview_02, 
+.close_preview_03,
+.close_preview_04,
+.close_preview_05,
+.close_preview_06,
+.close_preview_07 {
+	cursor: pointer;
+	height: 30px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 30px;
+	z-index: 999;
+	}
+
+.revealed_content {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	}
+
+.revealed_content p {
+	font-size: 110%;
+	line-height: 1.2;
+	color: #000;
+	}
+
+.content_preview {
+	display: block;
+	height: 0;
+	left: 0;
+	margin: .5%;
+	opacity: 0;
+	overflow: hidden;
+	padding-bottom: 24%;
+	position: relative;
+	top: 0;
+	width: 99%;
+	z-index: 100;
+	}
+
+.content_preview_x2 {
+	padding-bottom: 49%;
+	}
+
+.content_preview_x25 {
+	padding-bottom: 61.5%;
+	}
+
+.content_preview_x3 {
+	padding-bottom: 75%;
+	}
+
+.content_preview_xProduct {
+	padding-bottom: 85%;
+	}
+	
+#content_01 {
+	background: transparent url(../img/previewBox_directX12.jpg) no-repeat center center;
+	background-size: cover;
+	background-color: #4cc8f2;
+	}
+#content_02 {
+	background: transparent url(../img/previewBox_upgradeBasics.jpg) no-repeat center center;
+	background-size: cover;
+	background-color: #f9dd8f;
+	}
+#content_03 {
+	background: transparent url(../img/previewBox_whatsNew.jpg) no-repeat center center;
+	background-size: cover;
+	background-color: #3f6cae;
+	}
+#content_03 p, #content_03 h1 {color: #fff;}
+#content_04 {
+	background: transparent url(../img/previewBox_xboxOne.jpg) no-repeat center center;
+	background-size: cover;
+	background-color: #3fb34f;
+	}
+#content_05 {
+	background: transparent url(../img/previewBox_visualStyle.jpg) no-repeat center center;
+	background-size: cover;
+	background-color: #002f72;
+}
+#content_05 p, #content_05 h1 {color: #fff;}
+#content_06 {
+	background: transparent url(../img/previewBox_fourGames.jpg) no-repeat center center;
+	background-size: cover;
+	background-color: #009b8b;
+	}
+#content_06 p, 
+#content_06 h1 {color:#fff;}
+#content_07 {background-color: #ffffff;}
+#content_11 {background-color: #ffffff;}
+#content_22 {background-color: #ffffff;}
+#content_12 {
+	background: transparent url(../img/previewBox_sevenFlavors.jpg) no-repeat center center;
+	background-size: cover;
+	background-color: #662d91; color: #fff;}
+#content_12 p, 
+#content_12 h1 {color:#fff;}
+
+#content_13 {
+	background-color: #000; color: #fff;}
+#content_13 p, 
+#content_13 h1 {color:#fff;}
+
+#content_19 {
+	background: transparent url(../img/previewBox_oculus.jpg) no-repeat center center;
+	background-size: cover;
+	background-color: #ffffff;
+	}
+
+#content_20 {
+	background: transparent url(../img/previewBox_systemRequirements.jpg) no-repeat center center;
+	background-size: cover;
+	background-color: #ffffff;
+	}
+
+#content_05_03,
+#content_01_03,
+#content_03_02,
+#content_06_02,
+#content_06_03,
+#content_07_03,
+#content_07_04,
+#content_02_02,
+#content_02_03,
+#content_04_03,
+#content_04_04 {
+	background-color: #fff; color: #000;
+	}
+
+.content_hide {
+	margin: 0;
+	opacity: 0;
+	padding-bottom: 0;
+	width: 0;
+	}
+
+.container_product {
+	float: left;
+	margin: 0 3%;
+	width: 19%;
+	}
+
+.product_img {
+	display: block;
+	margin-bottom: 10px;
+	max-width: 400px;
+	}
+
+.product_img img {
+	height: auto;
+	width: 100%;
+	}
+.product_title {
+	color: #000;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.2 !important;
+	text-decoration: none;
+	}
+
+.product_title:hover {
+	color: #5f88bf;
+	}
+
+.space {
+	display: none;
+	}
+
+.product_price {}
+
+.product_price .finalPrice {
+	font-size: 32px;
+	line-height: 36px;
+	margin: 20px 0 0 0;
+	padding: 0;
+	font-weight: 700;
+	}
+.product_price .originalPrice {
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+	color: #787878;
+	}
+.product_price .shipping {
+	display: none;
+	}
+
+.productList .finalPrice {
+
+	}
+	
+.container_product .ne_button {
+	
+	}
+
+.container_featured .container_product {
+	float: left;
+	margin: 3% 0;
+	width: 100%;
+	}
+
+.container_featured .product_title {
+	color: #000;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	text-decoration: none;
+	}
+
+.container_featured .productList .finalPrice {
+	position: relative;
+	bottom: auto; 
+	margin-bottom: 5px;
+	}
+
+.container_featured .container_product .ne_button {
+	position: relative;
+	bottom: auto;
+	left: auto;
+	}
+
+.container_featured .container_product {
+	border-bottom: 5px solid #e5e5e5;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	}
+
+
+/* ====================================================== */
+/* ======================= Header ======================= */
+/* ====================================================== */
+header {
+	background: #ece7e1 url('../img/bg_header.gif') repeat-x bottom left;
+	background-size: 100% 100%;
+	display: block;
+	height: 57px;
+	width: 100%;
+	}
+
+header .logo_newegg {
+	background-image: url('../img/logo_newegg_us.png');
+	background-size: 100% 100%;
+	border: 0;
+	display: block;
+	height: 57px;
+	margin: 0 auto;
+	outline: 0;
+	width: 110px;
+	}
+
+header h1 {
+	text-indent: -10000px;
+	}
+
+
+/* ====================================================== */
+/* ======================== Hero ======================== */
+/* ====================================================== */
+.container_hero {
+	background: transparent url('../img/bg_hero.jpg') repeat-x center center;
+	background-size: 100% 100%;
+	padding: 0;
+	}
+
+.container_hero #hero {
+	background: transparent url('../img/hero_windows10.jpg') no-repeat center center;
+	background-size: 100% 100%;
+	height: 0;
+	padding-bottom: 58.333333%; /* 950x540 hero image */
+	width: 100%;
+	margin: 0 auto;
+	}
+
+.container_heroLogo {
+	background: transparent url('../img/bg_heroLogo.jpg') repeat-x center center;
+	background-size: 100% 100%;
+	padding: 0;
+	}
+
+.container_heroLogo #hero {
+	background: transparent url('../img/hero_windows10Logo.jpg') no-repeat center center;
+	background-size: 100% 100%;
+	height: 0;
+	padding-bottom: 58.333333%; /* 950x540 hero image */
+	width: 100%;
+	margin: 0 auto;
+	}
+
+.countdown_cntr {
+	position: relative;
+	display: none;
+	}
+
+.countdown_cntr #cntdwn {
+	position: absolute;
+	right: 45px;
+	top: 40px;
+	text-align: center;
+	}
+
+#cntdwn {
+	display: none;
+	}
+
+.countdownLi {
+	position: relative;
+	display: block;
+	width: 205px;
+	height: 115px;
+	text-align: center;
+	}
+
+.launchText {
+	position: absolute;
+	bottom: 10px;
+	left: auto;
+	display: block;
+	width: 100%;
+	font-weight: 700;
+	font-size: 11px;
+	text-transform: uppercase;
+	}
+
+
+/* ====================================================== */
+/* ====================== Shop Nav ====================== */
+/* ====================================================== */
+.container_shop_nav {
+	background-color: #000;
+	padding: 0 30px;
+	}
+
+.container_shop_nav ul {
+	}
+
+.container_shop_nav li {
+	border-bottom: 1px solid #222;
+	display: block;
+	float: left;
+	margin: 0 0 15px 0;
+	padding-bottom: 15px;
+	width: 100%;
+	}
+
+.container_shop_nav li:nth-child(5) {
+	border: none;
+	margin-bottom: 0;
+	}
+
+.container_shop_nav h3 {
+	color: #fff;
+	float: left;
+	padding-top: 6px;
+	margin-bottom: 0;
+	margin-top: 0;
+	}
+
+.container_shop_nav a {
+	float: right;
+	}
+
+
+/* ====================================================== */
+/* ======================= Footer ======================= */
+/* ====================================================== */
+footer {
+	background-color: #163247;
+	color: #b0becd;
+	display: block;
+	height: auto;
+	margin: 0;
+	padding: 30px;
+	position: relative;
+	width: auto;
+	z-index: 5;
+	}
+
+footer a, 
+footer a:link, 
+footer a:visited {
+	color: #b0becd;
+	text-decoration: none;
+	}
+
+footer a:hover, 
+footer a:focus {
+	color: #fff;
+	text-decoration: underline;
+	}
+
+footer a:active {
+	color: #fdbb20;
+	text-decoration: none;
+	}
+
+footer p {
+	color: #b0becd;
+	margin-top: 0;
+	}
+
+footer h3 {
+	color: #fff;
+	}
+
+footer form {
+	width: 100%;
+	}
+
+footer .form_btn {
+	margin-left: 10px;
+	}
+
+footer .form_input_email {
+	padding: 5px;
+	min-width: 60%;
+	max-width: 400px;
+	}
+
+footer .form_input_email:focus {
+	color: #222;
+	}
+
+.ne_social {
+	margin-top: 30px;
+	}
+
+.ne_social ul {
+	border: 1px solid #b0becd;
+	border-radius: 5px;
+	list-style-type: none;
+	padding: 5px 0;
+	}
+
+.ne_social ul li {
+	border-bottom: 1px solid #b0becd;
+	margin: 3px 0 2px 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+	padding-top: 10px;
+	text-align: center;
+	}
+
+.ne_social ul li.youtube {
+	border-bottom: none;
+	}
+
+.ne_social ul span {
+	margin-right: 7px;
+	width: 1em;
+	}
+
+footer .copyright {
+	display: block;
+	font-size: 14px;
+	margin: 15px 0 0 0;
+	}
+
+footer .copyright a {
+	border-right: 2px solid #b0becd;
+	display: block;
+	float: left;
+	padding: 0 10px;
+	}
+
+footer .copyright a:nth-child(1) {
+	padding-left: 0;
+	}
+
+footer .copyright a:nth-child(2) {
+	border: none;
+	}
+
+footer .copyright span {
+	display: block;
+	float: left;
+	text-align: left;
+	margin-top: 5px;
+	width: 100%;
+	}
+
+a#top:focus {
+	outline: 0;
+	}
+
+.top_link {
+	clear: both;
+	display: block;
+	margin: 30px 0 0 0;
+	text-align: center;
+	}
+
+.top_link a i {
+	margin-left: 6px;
+	}
+
+
+/* ====================================================== */
+/* ================= Featured LP Content ================ */
+/* ====================================================== */
+
+.content_grid_shift {
+	position: relative;
+	margin-top: -180px;
+	}
+
+.container_back {
+	display: block;
+	height: 67px;
+	margin-bottom: 15px;
+	text-align: center;
+	}
+	
+.container_back a {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+.container_featured {
+	background-color: #fff;
+	padding: 15px;
+	border: 10px solid #e5e5e5;
+	}
+
+.container_featured h2.inline {
+	display: inline;
+	font-size: inherit;
+	font-weight: 700;
+	}
+
+.article_author {
+	font-size: 80%;
+	color: #0073c6;
+	}
+
+.container_video {
+	position: relative;
+	padding-bottom: 56.85%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.container_video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.caption_video {
+	display: block;
+	border-bottom: 5px solid #e5e5e5;
+	padding-bottom: 30px;
+	margin-bottom: 60px;
+	}
+
+.article_img_75 {
+	width: 100%;
+	height: auto;
+	margin-left: 0;
+	margin: 10px auto;
+	}
+	
+	
+
+
+
+.content_preview_video {
+	width: 75%;
+	margin: 20px auto 0;
+	}
+.content_preview_video .container_video {
+	
+	}

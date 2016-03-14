@@ -1,0 +1,211 @@
+/*---- Self-Clearing Floats ----*/
+.mod:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+/*---- Fluid Images and Objects ----*/
+img,
+object,
+embed{max-width:100%;}
+
+/*---- Optional Vanity Styles ----*/
+img::selection{background:transparent;}
+img::-moz-selection{background:transparent;}
+
+@media only screen and (max-device-width:480px) {
+	html{-webkit-text-size-adjust:none;}
+	a{-webkit-tap-highlight-color:rgba(200,0,0,0.4);}
+}
+
+/* ---- Standard Links ---- */
+a, a:link, a:active, a:visited{color:#779ab4;text-decoration:underline;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	transition:all .3s ease;
+	cursor:pointer;}
+a:focus, a:hover{color:#fff;text-decoration:underline;cursor:pointer;}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+body{background-color:#ece8e0;color:#222;font:normal 100% Helvetica, Arial, Verdana, sans-serif;}
+abbr{cursor:help;}
+
+
+/* ---- Containers ---- */
+#cntr_fullspan{margin:0 auto;padding:0;width:960px;height:auto;}
+#cntr_main{margin:0 auto;padding:0;width:958px;height:auto;border-left:1px solid #999;border-right:1px solid #999;background-color:#E1E1E1;}
+#cntr_disclaimer{margin:0;padding:35px 0;width:100%;height:auto;text-align:center;}
+
+/*----------------------------------------------------------------------------------*/
+
+/* ---- Hero ---- */
+#hero{margin:0 auto;padding:0;width:958px;height:300px;background:url(../imgs/hero.jpg) no-repeat;}
+#hero a.product{display:block;position:absolute;width:10px;height:10px;padding:0;margin:10px 0 0 10px;border:0;}
+#hero a.brand{display:block;position:absolute;width:10px;height:10px;padding:0;margin:10px 0 0 30px;border:0;}
+#cntr_freeShipping{margin:0 auto;padding:12px 0;width:958px;height:auto;text-align:center;font-size:14px;background-color:#f5f5f5;}
+.freeShipping_info{text-transform:uppercase;color:#777;}
+.freeShipping_info_bold{text-transform:uppercase;color:#444;}
+
+/* ------- CSTM_STYLE ----- */
+#theStage{margin:0 auto;padding:0;width:958px;height:auto;overflow:hidden;display:block;background:url(../imgs/bg_theStage.jpg) top no-repeat;}
+#absoluteBottom{margin:0 auto;padding:0;width:958px;height:175px;display:block;}
+.cell_cntrTop{clear:both;margin:0;padding:0;width:958px;height:30px;background:url(../imgs/cellTable_top.png) no-repeat;}
+.cell_cntrBott12{clear:both;margin:0;padding:0;width:958px;height:30px;background:url(../imgs/cellTable_bottom12.png) no-repeat;}
+.cell_cntrBott34{clear:both;margin:0;padding:0;width:958px;height:30px;background:url(../imgs/cellTable_bottom34.png) no-repeat;}
+
+.soloCell{margin:0 auto;padding:0 29px;width:900px;height:auto;background:url(../imgs/1cellTable.png) top repeat-y;overflow:hidden;}
+.soloCell .productCell{margin:0 auto;padding:0;width:600px;min-height:325px;overflow:hidden;}
+.soloCell .imageInfo{float:left;margin:0;padding:0 20px;width:300px;height:auto;display:block;overflow:hidden;}
+.soloCell .brand_image{display:block;margin:0 auto 26px auto;padding:0;width:auto;height:40px;border:none;}
+.soloCell .product_image{display:block;margin:0;padding:0;width:300px;height:225px;border:none;}
+.soloCell .productInfo{float:right;margin:0;padding:0 20px 0 10px;width:230px;height:auto;display:block;}
+.soloCell .product_title{margin:75px 0 0 0;padding:0;width:100%;height:5em;display:block;}
+.soloCell .product_details{margin:10px 0 0 0;padding:0;width:100%;height:auto;display:block;}
+
+.twoCol_cntr{clear:both;margin:0 auto;padding:0 31px;width:896px;height:auto;background:url(../imgs/2cellTable.png) top repeat-y;overflow:hidden;}
+.twoCol_cntr .productCell{float:left;margin:0;padding:0;width:448px;height:auto;}
+.twoCol_cntr .productCell_right{float:right;margin:0;padding:0;width:448px;height:auto;}
+.twoCol_cntr .imageInfo{float:left;margin:0;padding:0;width:228px;height:auto;display:block;}
+.twoCol_cntr .brand_image{display:block;margin:0 auto 26px auto;padding:0;width:auto;height:40px;border:none;}
+.twoCol_cntr .product_image{display:block;margin:0 auto;padding:0;width:180px;height:135px;border:none;}
+.twoCol_cntr .productInfo{display:block;float:right;margin:0;padding:0 10px;width:200px;min-height:300px;}
+.twoCol_cntr .product_title{margin:75px 0 0 0;padding:0;width:100%;height:5em;display:block;}
+.twoCol_cntr .product_details{margin:10px 0 0 0;padding:0;width:100%;height:auto;display:block;}
+
+.threeCol_cntr{clear:both;margin:0 auto;padding:0 29px;width:900px;height:auto;background:url(../imgs/3cellTable.png) top repeat-y;overflow:hidden;}
+.threeCol_cntr .productCell{float:left;margin:0 60px;padding:0;width:180px;height:auto;}
+.threeCol_cntr .productCell_right{float:right;margin:0 60px;padding:0;width:180px;height:auto;}
+.threeCol_cntr .brand_image{clear:both;display:block;margin:0 auto 26px auto;padding:0;width:auto;height:40px;border:none;}
+.threeCol_cntr .product_image{display:block;margin:0 auto;padding:0;width:180px;height:135px;border:none;}
+.threeCol_cntr .productInfo{margin:0 auto;padding:0;width:180px;height:auto;display:block;}
+.threeCol_cntr .product_title{margin:40px 0 0 0;padding:0;width:100%;height:5em;display:block;}
+.threeCol_cntr .product_details{margin:10px 0 10px 0;padding:0;width:100%;height:auto;display:block;}
+
+.fourCol_cntr{clear:both;margin:0 auto;padding:0 29px;width:900px;height:auto;background:url(../imgs/4cellTable.png) top repeat-y;overflow:hidden;}
+.fourCol_cntr .productCell{float:left;margin:0 20px;padding:0;width:185px;height:auto;}
+.fourCol_cntr .productCell_right{float:right;margin:0 20px;padding:0;width:185px;height:auto;}
+.fourCol_cntr .brand_image{clear:both;display:block;margin:0 auto 26px auto;padding:0;width:auto;height:40px;border:none;}
+.fourCol_cntr .product_image{display:block;margin:0 auto;padding:0;width:180px;height:135px;border:none;}
+.fourCol_cntr .productInfo{margin:0 auto;padding:0;width:180px;height:auto;display:block;}
+.fourCol_cntr .product_title{margin:40px 0 0 0;padding:0;width:100%;height:5em;display:block;}
+.fourCol_cntr .product_details{margin:10px 0 0 0;padding:0;width:100%;height:auto;display:block;}
+
+a.ProductTitle, a.ProductTitle:link, a.ProductTitle:active, a.ProductTitle:visited{font-size:.75em;font-weight:700;color:#244e6d;text-wrap:normal;text-decoration:underline;}
+a.ProductTitle:hover{font-size:.75em;font-weight:700;color:#000;text-wrap:normal;text-decoration:none;}
+a.product_title, a.product_title:link, a.product_title:active, a.product_title:visited{font-size:1em;font-weight:700;color:#330066;text-wrap:normal;text-decoration:underline;}
+a.product_title:hover{font-size:1em;font-weight:700;color:#000;text-wrap:normal;text-decoration:none;}
+
+.disclaimer{font-size:.75em;color:#777;line-height:1.35em;}
+a.disc, a.disc:link, a.disc:active, a.disc:visited{font-size:.75em;font-weight:700;color:#036;text-wrap:normal;text-decoration:underline;}
+a.disc:hover{font-size:.75em;font-weight:700;color:#069;text-wrap:normal;text-decoration:none;}
+
+.originalPrice{font-size:.75em;color:#999;}
+.originalPriceLine{font-size:.75em;color:#999;}
+.finalPrice{font-size:1.75em;font-weight:bold;color:#000;}
+ul.cstm_bullets{margin:0;padding:0;width:100%;height:6em;list-style:none;font-size:0.75em;color:#666666;list-style:none;}
+ul.cstm_bullets li{background:url(../imgs/listStyle.gif) no-repeat;padding:0 0 0 15px;background-position:0 4px;}
+ul.cstm_bullets li .product{background:none;background-position:0 4px;font-weight:700;}
+.product_pricing{clear:both;margin:0;padding:0;height:auto;width:auto;overflow:hidden;}
+ul.priceList{margin:0;padding:8px 0 0 0;height:auto;width:auto;list-style:none;}
+ul.priceList li{list-style:none;}
+.freeShipping{font-size:.75em;color:#06F;}
+/* ------ /CSTM_STYLE ----- */
+
+/* ---- Typography (pricing) ---- */
+.soldOut{font-size:.75em;font-weight:bold;text-transform:uppercase;color:#d00;}
+.soldout{font-size:.75em;font-weight:bold;text-transform:uppercase;color:#d00;}
+.promo_text{font-size:.75em;color:#5f9000;}
+.mapPricing{clear:both;float:left;margin:4px 0;padding:4px 8px;width:auto;height:auto;text-align:center;line-height:normal;background-color:#f7f7f7;border:1px solid #ddd;}
+
+/* ---- Listing Page Layout ---- */
+.listingPage{clear:both;margin:0 auto;padding:0;width:860px;height:auto;overflow:hidden;}
+.listingPage .productCell{float:left;margin:0 0 0 20px;padding:0;width:450px;height:auto;}
+.listingPage .productCell_right{float:right;margin:0;padding:0;width:180px;height:auto;text-align:right;}
+.listingPage .cntr_promoCode{clear:both;margin:0;padding:0;width:auto;height:55px;}
+
+/* ---- Typography (hidden) ---- */
+.mir{display:none;}
+.instantSavings{display:none;}
+.shipping{display:none;}
+
+/* ---- Promocode Fieldset ---- */
+fieldset.promo{clear:both;margin:0 auto;padding:6px;width:auto;height:auto;border:1px dashed #ccc;text-align:center;font-size:.75em;color:#006699;}
+fieldset.promo legend{margin:0 auto;padding:0 6px;text-align:center;font-size:1em;color:#006699;background-color:#FFF;}
+
+/* ---- Links ---- */
+a.inCart, a.inCart:link, a.inCart:active, a.inCart:visited{font-size:.75em;color:#06F;text-decoration:none;}
+a.inCart:hover{font-size:.75em;color:#000;text-decoration:none;}
+
+/*---- Button(s) ----*/
+a.button_preOrder, a.button_preOrder:link, a.button_preOrder:active, a.button_preOrder:visited, 
+a.button_preOrder:hover{float:left;display:block;margin:4px 0 0 0;padding:0;width:80px;height:23px;background:url(http://promotions.newegg.com/template/us/imgs/button_preorder.png) no-repeat;}
+
+/* ---- Spacer(s) ---- */
+.blank5{clear:both;display:block;margin:0;padding:0;width:100%;height:5px;background:none;}
+.blank10{clear:both;display:block;margin:0;padding:0;width:100%;height:10px;background:none;}
+.blank20{clear:both;display:block;margin:0;padding:0;width:100%;height:20px;background:none;}
+.blank30{clear:both;display:block;margin:0;padding:0;width:100%;height:30px;background:none;}
+.blank40{clear:both;display:block;margin:0;padding:0;width:100%;height:40px;background:none;}
+.blank50{clear:both;display:block;margin:0;padding:0;width:100%;height:50px;background:none;}
+.blank60{clear:both;display:block;margin:0;padding:0;width:100%;height:60px;background:none;}
+.blank70{clear:both;display:block;margin:0;padding:0;width:100%;height:70px;background:none;}
+.blank80{clear:both;display:block;margin:0;padding:0;width:100%;height:80px;background:none;}
+.blank90{clear:both;display:block;margin:0;padding:0;width:100%;height:90px;background:none;}
+.blank100{clear:both;display:block;margin:0;padding:0;width:100%;height:100px;background:none;}
+.blank130{clear:both;display:block;margin:0;padding:0;width:100%;height:130px;background:none;}
+.blank200{clear:both;display:block;margin:0;padding:0;width:100%;height:200px;background:none;}
+.line_spacer{clear:both;display:block;margin:0 auto;padding:0;width:958px;height:52px;background:url(http://promotions.newegg.com/template/us/imgs/line_spacer.png) no-repeat;}
+
+/*----------------------------------------------------------------------------------*/
+
+/* ---- Error Message Popup ---- */
+br.both{clear:both;}
+#backgroundPopup{display:none;position:fixed;_position:absolute; /* hack for internet explorer 6*/height:100%;width:100%;top:0;left:0;background:#000;border:1px solid #000;z-index:999;}
+#popupMessage{display:none;position:fixed;_position:absolute; /* hack for internet explorer 6*/height:auto;width:400px;background:#fff;border:10px solid #eee;z-index:1001;padding:40px;font-size:12px;text-align:left;}
+#popupMessage .error_message{color:#ed4e61;font-size:26px;font-weight:bold;text-transform:uppercase;}
+#popupMessage #message_box{margin-bottom:14px;padding-bottom:14px;color:#ed4e61;border-bottom:1px dashed #ddd;}
+#popupMessageClose{font-size:18px;position:absolute;right:12px;top:6px;color:#444;font-weight:bold;display:block;text-decoration:none;cursor:pointer;}
+#contactArea{font-size:12px;line-height:18px;color:#666;}
+#button{text-align:center;margin:0;}
+a.link_message, a.link_message:link, a.link_message:active, a.link_message:visited{color:#257bbe; text-decoration:underline;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease;transition: all .3s ease;cursor:pointer;}
+a.link_message:focus, a.link_message:hover{color:#000; text-decoration:underline;cursor:pointer;}
+/* ---- Listing Page (example: black friday listing page(s) ---- */
+p.category{clear:both;margin:0;padding:0 0 6px 30px;font-size:1em;font-weight:bold;color:#244e6d;}
+table.blackfriday{clear:both;margin:0 auto;padding:0;width:900px;height:auto;font-size:1em;overflow:hidden;}
+table.blackfriday tr{margin:0;padding:0;width:900px;height:auto;}
+table.blackfriday tr td.product_description1{margin:0;padding:5px 10px;width:auto;height:auto;text-align:left;vertical-align:middle;border-bottom:1px solid #fff;border-right:1px solid #fff;background:#f3f3f3;}
+table.blackfriday tr td.product_price1{margin:0;padding:5px 10px 5px 0;width:120px;height:auto;text-align:right;color:#222;font-weight:bold;border-bottom:1px solid #fff;border-right:1px solid #fff;background:#f3f3f3;}
+table.blackfriday tr td.product_description2{margin:0;padding:5px 10px;width:auto;height:auto;text-align:left;vertical-align:middle;border-bottom:1px solid #fff;border-right:1px solid #fff;background:#f9f9f9;}
+table.blackfriday tr td.product_price2{margin:0;padding:5px 10px 5px 0;width:120px;height:auto;text-align:right;color:#222;font-weight:bold;border-bottom:1px solid #fff;border-right:1px solid #fff;background:#f9f9f9;}
+table.blackfriday tr td.fblike1{margin:0;padding:5px 0 5px 10px;width:120px;height:auto;text-align:left;vertical-align:middle;border-bottom:1px solid #fff;border-right:1px solid #fff;background:#f3f3f3;}
+table.blackfriday tr td.fblike2{margin:0;padding:5px 0 5px 10px;width:120px;height:auto;text-align:left;vertical-align:middle;border-bottom:1px solid #fff;border-right:1px solid #fff;background:#f9f9f9;}
+a.title, a.title:link, a.title:active, a.title:visited{font-size:.75em;color:#296ea0;text-wrap:unrestricted;text-decoration:underline;}
+a.title:hover{font-size:.75em;color:#222;text-wrap:unrestricted;text-decoration:none;}
+
+/*----------------------------------------------------------------------------------*/
+
+/* ---- Video Popup ---- */
+#video-popup{display:none;position:fixed;height:auto;width:600px;background:#fff;border:10px solid #eee;z-index:1000;padding:40px;font-size:12px;text-align:left;}
+#video-popup .error_message{color:#ed4e61;font-size:26px;font-weight:bold;text-transform:uppercase;}
+#video-popup .video-popup-video {display:none;}
+.video-popup-close{font-size:18px;position:absolute;right:12px;top:6px;color:#444;font-weight:bold;display:block;text-decoration:none;cursor:pointer;}
+.video-popup-close:hover {color:#444;
+
+/*----------------------------------------------------------------------------------*/
+
+/* ---- Firefox Hacks ---- */
+@-moz-document url-prefix(){
+.cntr_pricing{clear:both;margin:5px 0;padding:0;height:auto;width:auto;overflow:hidden;}
+ul.priceList{margin:0;padding:8px 0 0 0;width:auto;list-style:none;}
+ul.priceList li{margin:0 0 6px 0;padding:0;height:auto;width:auto;line-height:1.125em;list-style:none;}
+/* ---- Custom Bullet List ---- */
+ul.list_features{margin:3px 0;padding:0;height:auto;width:auto;font-size:.75em;color:#777;list-style:none;}
+ul.list_features li{margin:0;padding:0 14px;text-wrap:normal;background:url(http://promotions.newegg.com/template/us/imgs/listStyle.gif) no-repeat;background-position:0 4px;}
+.mapPricing{clear:both;float:left;margin:4px 0;padding:4px 8px;width:auto;height:auto;text-align:center;line-height:normal;background-color:#f9f6f2;border:1px solid #bbb;}
+a.inCart, a.inCart:link, a.inCart:active, a.inCart:visited{padding:4px 8px;font-size:.75em;color:#06F;line-height:1.5em;text-decoration:none;}
+a.inCart:hover{padding:4px 8px;font-size:.75em;color:#000;line-height:1.5em;text-decoration:none;}
+}
+.ellipsis {overflow:hidden !important;}
+
+
+/*----------------------------------------------------------------------------------*/

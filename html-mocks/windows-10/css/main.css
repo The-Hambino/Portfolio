@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ===================== Base Styles ===================== */
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.2;
+	}
+
+::-moz-selection {
+	background: transparent;
+	text-shadow: none;
+	}
+	
+::selection {
+	background: transparent;
+	text-shadow: none;
+	}
+	
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+	}
+	
+textarea {
+	resize: vertical;
+	}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.2;
+	}
+	
+h1 {
+	color: #000;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28px;
+	}
+	
+h2 {
+	color: #000;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	}
+	
+h3 {
+	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	margin: 10px 0;
+	}
+	
+h4 {
+	color: #333;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	}
+	
+h5 {
+	color: #333;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	}
+	
+h6 {
+	color: #333;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	}
+
+p {
+	color: #333;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	margin: 10px 0;
+	}
+
+.article_img {
+	width: 100%;
+	height: auto;
+	margin: 10px auto;
+	}
+
+.article_img_75 {
+	width: 75%;
+	height: auto;
+	margin-left: 12.5%;
+	}
+
+.container_featured h1 {
+	font-size: 32px;
+	line-height: 36px;
+	margin: 15px 0;
+	text-transform: uppercase;
+	}
+
+.container_featured h2 {
+	font-size: 24px;
+	line-height: 1.2;
+	margin: 15px 0;
+	}
+
+.container_featured p {
+	font-size: 16px;
+	line-height: 20px;
+	margin: 15px 0;
+	}
+
+.productList .originalPrice, 
+.productList .instantSavings,
+.productList .shipping,
+.productList .mir {display: none;}
+
+
+.disclaimer, .disclaimer p {text-align: center; color: #aaa !important;}
+
+.bullets {
+	list-style: outside circle;
+    margin-left: 1.2em;
+	}
+
+/* ====================================================== */
+/* =============== Clear Floated Elements =============== */
+/* ====================================================== */
+.clear {
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	}
+
+.clearfix::before,
+.clearfix::after,
+.container_full::before,
+.container_full::after {
+	content: '';
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	}
+
+.clearfix::after,
+.container_full::after {
+	clear: both;
+	}
+
