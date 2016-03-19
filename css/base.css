@@ -129,6 +129,7 @@ footer .container {background: transparent url('../imgs/site-footer-bg.gif') top
 
 /* Responsive */
 
+
 @media only screen and (max-width: 769px) {
 	#navbar li a ,
 	#navbar .dropdown {text-align: center;}
@@ -137,6 +138,13 @@ footer .container {background: transparent url('../imgs/site-footer-bg.gif') top
 	.contact-nav li {text-align: center;}
 	
 	.banner-container {min-width:1080px; overflow: hidden;}
+	.banner-container img {position: relative; top: 0; left: -25%;}
+}
+
+
+@media only screen and (max-width: 500px) {
+
+	.banner-container {min-width:700px; overflow: hidden;}
 	.banner-container img {position: relative; top: 0; left: -25%;}
 }
 
