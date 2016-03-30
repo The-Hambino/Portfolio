@@ -103,15 +103,11 @@ footer .container {background: transparent url('../imgs/site-footer-bg.gif') top
 #page img {max-width: 100%; position: relative; z-index: -1;}
 #project .jumbotron {margin-bottom: 0;}
 #project h2 {text-align: center;}
-#project h2 span {padding: 0 15px; background-color: #fff; position: relative; z-index: 2;}
-#project h2::after {
-    content: "";
-    position: absolute;
-    top: 55%;
-    left: 0px;
-    right: 0px;
-    border-top: 1px solid rgb(204, 204, 204);
-	}
+#project h2 span {padding: 0 15px; background-color: #fff; position: relative; z-index: 2; display: inline-block;}
+#project h2::after {content: ""; position: absolute; top: 55%; left: 0px; right: 0px; border-top: 1px solid rgb(204, 204, 204);}
+
+.project-description {}
+.project-description p {font-size: 1.5em; line-height: 1.5; padding: 1em; background-color: #fff; border: 1px solid #eee;}
 
 .role {}
 .role span {display: inline-block; font-weight: 700; text-transform: uppercase; background-color: #eee; color: #666; font-size: 70%; padding: 5px 8px; margin: 0 5px 0 0;}
@@ -123,8 +119,8 @@ footer .container {background: transparent url('../imgs/site-footer-bg.gif') top
 
 /* Helpers */
 .spacer-15::before {content: ""; clear: both; display: table; visibility: hidden; height: 15px; overflow: hidden; font-size: 0;}
-.spacer-30::before {content: ""; clear: both; display: table; visibility: hidden; height: 15px; overflow: hidden; font-size: 0;}
-.spacer-45::before {content: ""; clear: both; display: table; visibility: hidden; height: 15px; overflow: hidden; font-size: 0;}
+.spacer-30::before {content: ""; clear: both; display: table; visibility: hidden; height: 30px; overflow: hidden; font-size: 0;}
+.spacer-45::before {content: ""; clear: both; display: table; visibility: hidden; height: 45px; overflow: hidden; font-size: 0;}
 .flush-row {padding-left: 0; padding-right: 0;}
 
 /* Responsive */

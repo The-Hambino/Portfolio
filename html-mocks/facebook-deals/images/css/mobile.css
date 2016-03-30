@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+#cntr_fullspan {width: 100%;}
+#cntr_main {width: auto !important; padding: 30px;}
+#hero{margin:0 auto;padding:0;width:auto;height:auto;background-color:#b0bdcd; background-image:none; margin-bottom:30px;padding:10px 20px 20px 20px;}
+#hero .hide {display:block;}
+
+#hero h1.hide {}
+#hero h2.hide {}
+
+
+.productRow {margin:20px 0 0 0; width: 100%;}
+.productRow .leftCol {display:block; float:left; width:100%; margin-bottom:10px;}
+.productRow .rightCol {display:block; float:left; width:100%; margin-left:0;}
+.productImage {display:block; width:65%; height:65%; border:none; margin: 0 auto;}
+.productText-price {position:relative;}
+.productText-promo {display:block; width:100%; height:44px; border:1px dashed #E95829; margin:15px 0 0 0; font-size:14px; line-height:44px;}
+.line_spacer{clear:both;display:block;margin:0 auto;padding:0;width:100%;height:100px;background:url(../imgs/line_spacer.png) no-repeat center center;}
+.disclaimer {display:block; float:left; width:100%;}
+
+
+h1 {font-size:48px; line-height:42px; color:#fff; font-weight:300;}
+h1 span {color:#E95829;}
+h2 {font-size:18px; line-height:22px; margin:0; padding:0;}
+h2 span {color:#E95829;}
+h2.hide {background-color:#fff; padding: 10px 40px 10px 20px; margin-left: -20px; border-bottom: double 10px #b0becd;}
+.productText-bullets ul {font-size:16px; line-height:22px; margin:15px 0 0 20px; padding:0;}
+.productText-price {display:block; min-height:80px;}
+.productText-price ul {list-style-type:none; margin:15px 0 0 0; padding:0;}
+.productText-price .finalPrice {font-size:36px; line-height:44px; margin:0; padding:0; font-weight:700;}
+.productText-price .originalPrice, .originalPriceLine {font-size:14px; line-height:22px; margin:0; padding:0; color:#787878;}
+.productText-price .mapPricing {font-size:14px; line-height:44px; margin:0; padding:0 12px; display:inline-block; border:1px solid #ccc; background-color:#eee;}
+.productText-promo span.promo-title {display:block; float:left; color:#FFFFFF; background-color:#E95829; line-height:46px; padding:0 11px; margin:-1px 8px 0 -1px;}
+.productText-promo span.promo-code {display:inline-block;}
+.productText-promo span.promo-details {display:inline-block; clear:both;}
+.productText-promo b {font-weight:700; color:#E95829;}
+a.productButton140 {position:absolute; bottom:19px; right:-2px; background:url(../imgs/btn-buyNow140.png) no-repeat; display:block; width:140px; height:30px; margin-top:20px;}
+
+@media (max-width: 430px) {
+		.productText-promo {line-height:22px !important; margin-top: 0;}
+}
+
+@media (max-width: 400px) {
+	a.productButton140 {position:absolute; bottom:27px; right:-2px; background:url(../imgs/btn-buyNow80.png) no-repeat; display:block; width:80px; height:23px; margin-top:20px;}
+}
+
