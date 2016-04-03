@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+header, section, footer, aside, article, figure {display: block;}
+footer {padding: 15px 0; background-color: #e2211c; text-align:center; margin-bottom:2%; position: relative; clear: both;}
+
+
+/* --- BASE STYLES --- */
+body {font-family: Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.3em; background:transparent url(images/bg_lines.gif) 0 0 fixed; background-repeat: repeat; margin: 0; padding: 0;}
+h1 {font-size: 1.5em; line-height: 1.7em; font-weight: 500;}
+h2 {font-size: 1.3em; line-height: 1.3em; font-weight: 500;}
+.article h2 {color: #e2211c;}
+h3 {font-size: 1.1em; line-height: 1.3em;font-weight: normal; }
+p {font-size: .9em; line-height: 1.4em; margin: .9em 0; }
+.price {color: #e2211c;}
+.clear {position: relative; clear: both;}
+.productList .originalPrice {display:none;}
+.productList .instantSavings {display:none;}
+.productList .shipping {display:none;}
+
+/* --- COLOR PALETTE --- */
+/*
+	Red - e2211c 
+	White - ffffff
+	Dark Gry - 231f20
+	Black - 000000
+*/
+
+/* --- ANCHOR STYLES --- */	
+a, a:visited, a:link {color: #000000; text-decoration: underline;}
+a:hover {color: #e2211c; text-decoration: underline;}
+a.textLinkBlack, a.textLinkBlack:visited, a.textLinkBlack:link {color: #000000; text-decoration: underline;}
+a.textLinkBlack::after {content: url(images/linkArrow_black.png); display: inline-block; padding-left: 5px;}
+a.textLinkBlack:hover {color: #e2211c; text-decoration: underline;}
+a.textLinkBlack:hover::after {content: url(images/linkArrow_red.png);}
+a.textLinkRed, a.textLinkRed:visited, a.textLinkRed:link {color: #e2211c; text-decoration: underline;}
+a.textLinkRed::after {content: url(images/linkArrow_red.png); display: inline-block; padding-left: 5px;}
+a.textLinkRed:hover {color: #ffffff; text-decoration: underline;}
+a.textLinkRed:hover::after {content: url(images/linkArrow_white.png);}
+a.textLinkWhite, a.textLinkWhite:visited, a.textLinkWhite:link {color: #ffffff; text-decoration: underline;}
+a.textLinkWhite::after {content: url(images/linkArrow_white.png); display: inline-block; padding-left: 5px;}
+a.textLinkWhite:hover {color: #000000; text-decoration: underline;}
+a.textLinkWhite:hover::after {content: url(images/linkArrow_black.png);}
+
+	
+/* --- HEADER STYLES --- */
+.headerContainer {display: block; width: 100%; height: 140px;}
+header {position: fixed; width: 100%; height: 140px; background-color: #231f20; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; z-index: 9999;}
+.headerLogo {display: block; width: 100%; height: 140px; margin: 0 auto; background: #231f20 url(images/logo_850pro_largeB.png) no-repeat center center; position: fixed; z-index: 999; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+.headerLogo a {display:block; width:100%; height:100%;}
+.navBar {display: block; width: 100%; height: 85px; min-width:890px; background: transparent url(images/bg_navShadow.png) repeat-x 0 0;	text-align: center; line-height: 60px; font-size: 18px;	position: fixed; top:80px; z-index: 100;}
+.navBar ul li {display: inline; margin: 0 30px;}
+.sponsorLogo01 {position: absolute; top: 80px; left: -100px; z-index: 999; display: block; width: 98px; height: 60px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+.sponsorLogo02 {position: absolute; top: 80px; right: -100px; z-index: 999; display: block; width: 98px; height: 60px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+.techSpecs {position: absolute; top: 0; right: -200px; z-index: 999; display: block; width: 200px; height: 80px; text-align:right; line-height: 80px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+header.sticky {height: 80px;}
+header.sticky .headerLogo {height: 80px; background: #231f20 url(images/logo_850pro_small.png) no-repeat center center;}
+header.sticky .sponsorLogo01 {left: 30px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+header.sticky .sponsorLogo02 {right: 30px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+header.sticky .techSpecs {right: 30px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+body.home .navBar {margin-top:60px;}
+body.home header .sponsorLogo01 {top:140px; left:3%;}
+body.home header .sponsorLogo02 {top:140px; right:3%;}
+
+
+/* --- NAV HIGHLIGHT --- */
+body.highend div.navBar li.navItem-01 a {text-transform:uppercase; color:#034ea1; font-weight:bold; text-decoration:none;}
+body.highend div.navBar li.navItem-01 a.textLinkBlack:after {content:none;}
+body.gamers div.navBar li.navItem-02 a {text-transform:uppercase; color:#034ea1; font-weight:bold; text-decoration:none;}
+body.gamers div.navBar li.navItem-02 a.textLinkBlack:after {content:none;}
+body.mobile div.navBar li.navItem-03 a {text-transform:uppercase; color:#034ea1; font-weight:bold; text-decoration:none;}
+body.mobile div.navBar li.navItem-03 a.textLinkBlack:after {content:none;}
+body.home div.navBar h1 {text-transform:uppercase; color:#034ea1; font-weight:bold; line-height: 60px; text-decoration:none;}
+
+
+/* --- PAGE STYLES - INNER PAGES --- */
+.pageContent {display: block; width:958px; border-left: 1px solid #aaaaaa; border-right: 1px solid #aaaaaa; margin: 0 auto; background-color: #ffffff;}
+.pageContentInner {position: relative; height: 100%;}
+.video {display: block; width: 68%; height: 300px; margin-left: 2%; background-color: #eeeeee; float: left;}
+.product {display: block; width: 30%; height: auto; background-color: #ffffff; margin-top: 2%; float: left;}
+.productInner {padding: 10px;}
+.article {display: block; width: 68%; height: auto; margin-left:2%; background-color:#fff; margin-top:6%; margin-bottom:2%; float: left;}
+.articleInner {padding: 10px 20px 0 0;}
+
+
+/* --- PAGE STYLES - HOME --- */
+.column1 {display: block; width: 30%; position: absolute; top: 20px; left: 3%;}
+.column2 {display: block; width: 30%; position: absolute; top: 20px; left: 35%;}
+.column3 {display: block; width: 30%; position: absolute; top: 20px; left: 67%;}
+
+
+/* --- PAGE STYLES - TECH SPECS --- */
+.techSpecsBody .product {display: block; width: 100%; height: auto; background-color:#ffffff; margin:0 0 50px 0; float: left;}
+.techSpecsBody .product-inner {margin-top:-50px;}
+.priceBox {display: block; width: 20%; padding:3% 1% 0 1%; margin:0 0 30px 2%; float: left; border: 1px solid #000; }
+.samsungFeatureBox {display: block; width: 29%; margin:0 0 30px 3%; float: left;}
+.samsungFeatureBox img {width:100%; height:auto;}
+li.space {display:none;}
+li.shipping {display:none;}
+
+
+/* --- LIFESTYLE STYLES --- */
+.lifestyle {display: block; width: 30%; height: 300px; float: left;}
+.lifestyle h1 {display: block; width: 100%; background-color: #333333; background-color: rgba(0,0,0,.8); color: #ffffff; padding:15px; font-size:24px; line-height:24px; position: absolute; bottom: 0;}
+body.highend div.lifestyle {background: transparent url(images/lifestyle_highendNE2b.jpg) no-repeat 0 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden; position: relative;}
+body.gamers div.lifestyle {background: transparent url(images/lifestyle_gamerNE2b.jpg) no-repeat 0 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden; position: relative;}
+body.mobile div.lifestyle {background: transparent url(images/lifestyle_mobileNE2b.jpg) no-repeat 0 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden; position: relative;}
+
+
+
+/* --- PRODUCT CAROUSEL STYLES -- */
+.product-logo {display: block; width: 85%; margin: 0 auto;}
+.product-details {display: block; width: 100%;}
+.product-details h2 {text-align: center;}
+.product-button {margin: 5px auto;}
+.product-details-table {width: 100%; font-size:75%;}
+.product-details-table tr {border-bottom: 1px solid #cccccc;}
+.product-details-table td {padding: 10px;}
+.product-details-table tr.last {border: none;}
+td.first {font-weight: bold; width: 50%;}
+.btn-buynow {display: block; width: 110px; margin: 10px auto;}
+
+
+/* --- HACKY STUFF --- */
+div.preloadArrows {display: block; height: 0; width: 0; position: absolute; left: -300px;}
+

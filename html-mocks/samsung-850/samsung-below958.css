@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.pageContainer {margin-bottom:50px;}
+.navBar {display: block; width: 100%; height: 85px; background: transparent url(images/bg_navShadow.png) repeat-x 0 0;	text-align: center; line-height: 60px; font-size: 18px;	position: fixed; top:80px; z-index: 100;}
+.navBar h1 {font-size:18px; text-align:center;}
+
+body.home .column1 {display: block; width: 94%; position: absolute; top: -5px; left: 3%;}
+body.home .column2 {display: block; width: 94%; position: absolute; top: 700px; left: 3%;}
+body.home .column3 {display: block; width: 94%; position: absolute; top: 1400px; left: 3%; margin-bottom:50px;}
+
+
+body.home .column2 .lifestyle {top: 0;}
+body.home .column2 .article {top: 465px;}
+body.home .column2 .video {top: 465px;}
+
+.headerLogo {background-size: 80%;}

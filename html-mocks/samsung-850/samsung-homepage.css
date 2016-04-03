@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+header, section, footer, aside, article, figure {display: block;}
+footer {padding: 10px 0; background-color: #e2211c; text-align:center; position: relative; clear: both;}
+
+
+/* --- BASE STYLES --- */
+body {font-family: Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.3em; background:transparent url(images/bg_lines.gif) 0 0 fixed; background-repeat: repeat; margin: 0; padding: 0;}
+h1 {font-size: 1.5em; line-height: 1.7em; font-weight: 500;}
+h2 {font-size: 1.3em; line-height: 1.2em; font-weight: 500;}
+h3 {font-size: 1.1em; line-height: 1.3em;font-weight: normal; }
+p {font-size: .9em; line-height: 1.4em; margin: .9em 0; }
+.price {color: #e2211c;}
+.clear {position: relative; clear: both;}
+
+/* --- COLOR PALETTE --- */
+/*
+	Red - e2211c 
+	White - ffffff
+	Dark Gry - 231f20
+	Black - 000000
+*/
+
+/* --- ANCHOR STYLES --- */	
+a, a:visited, a:link {color: #000000; text-decoration: underline;}
+a:hover {color: #e2211c; text-decoration: underline;}
+a.textLinkBlack, a.textLinkBlack:visited, a.textLinkBlack:link {color: #000000; text-decoration: underline;}
+a.textLinkBlack::after {content: url(images/linkArrow_black.png); display: inline-block; padding-left: 5px;}
+a.textLinkBlack:hover {color: #e2211c; text-decoration: underline;}
+a.textLinkBlack:hover::after {content: url(images/linkArrow_red.png);}
+a.textLinkBlack2, a.textLinkBlack2:visited, a.textLinkBlack2:link {color: #000000; text-decoration: underline;}
+a.textLinkBlack2::after {content: url(images/linkArrow_black.png); display: inline-block; padding-left: 5px;}
+a.textLinkBlack2:hover {color: #ffffff; text-decoration: underline;}
+a.textLinkBlack2:hover::after {content: url(images/linkArrow_white.png);}
+a.textLinkRed, a.textLinkRed:visited, a.textLinkRed:link {color: #e2211c; text-decoration: underline;}
+a.textLinkRed::after {content: url(images/linkArrow_red.png); display: inline-block; padding-left: 5px;}
+a.textLinkRed:hover {color: #ffffff; text-decoration: underline;}
+a.textLinkRed:hover::after {content: url(images/linkArrow_white.png);}
+a.textLinkWhite, a.textLinkWhite:visited, a.textLinkWhite:link {color: #ffffff; text-decoration: underline;}
+a.textLinkWhite::after {content: url(images/linkArrow_white.png); display: inline-block; padding-left: 5px;}
+a.textLinkWhite:hover {color: #000000; text-decoration: underline;}
+a.textLinkWhite:hover::after {content: url(images/linkArrow_black.png);}
+a.textLinkWhite2, a.textLinkWhite2:visited, a.textLinkWhite2:link {color: #ffffff; text-decoration: underline;}
+a.textLinkWhite2::after {content: url(images/linkArrow_white.png); display: inline-block; padding-left: 5px;}
+a.textLinkWhite2:hover {color: #e2211c; text-decoration: underline;}
+a.textLinkWhite2:hover::after {content: url(images/linkArrow_red.png);}
+
+	
+/* --- HEADER STYLES --- */
+.headerContainer {display: block; width: 100%; height: 140px;}
+header {position: fixed; width: 100%; height: 140px; background-color: #231f20; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; z-index: 9999;}
+.headerLogo {display: block; width: 100%; height: 140px; margin: 0 auto; background: #231f20 url(images/logo_850pro_largeB.png) no-repeat center center; position: fixed; z-index: 999; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease;}
+.headerLogo a {display:block; width:100%; height:100%;}
+.navBar {display: block; width: 100%; height: 85px; background: transparent url(images/bg_navShadow.png) repeat-x 0 0;	text-align: center; line-height: 60px; font-size: 18px;	position: fixed; top:80px; z-index: 100;}
+.navBar ul li {display: inline; margin: 0 30px;}
+.sponsorLogo01 {position: absolute; top: 80px; left: -100px; z-index: 999; display: block; width: 98px; height: 60px; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease;}
+.sponsorLogo02 {position: absolute; top: 80px; right: -100px; z-index: 999; display: block; width: 98px; height: 60px; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease;}
+.techSpecs {position: absolute; top: 0; right: -200px; z-index: 999; display: block; width: 200px; height: 80px; text-align:right; line-height: 80px; -webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease;}
+header.sticky {height: 80px;}
+header.sticky .headerLogo {height: 80px; background: #231f20 url(images/logo_850pro_small.png) no-repeat center center; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease;}
+header.sticky .sponsorLogo01 {left: 30px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+header.sticky .sponsorLogo02 {right: 30px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+header.sticky .techSpecs {right: 30px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+body.home .navBar {margin-top:60px;}
+body.home header .sponsorLogo01 {top:140px; left:3%;}
+body.home header .sponsorLogo02 {top:140px; right:3%;}
+
+
+/* --- NAV HIGHLIGHT --- */
+body.highend div.navBar li.navItem-01 a {text-transform:uppercase; color:#034ea1; font-weight:bold; text-decoration:none;}
+body.highend div.navBar li.navItem-01 a.textLinkBlack:after {content:none;}
+body.gamers div.navBar li.navItem-02 a {text-transform:uppercase; color:#034ea1; font-weight:bold; text-decoration:none;}
+body.gamers div.navBar li.navItem-02 a.textLinkBlack:after {content:none;}
+body.mobile div.navBar li.navItem-03 a {text-transform:uppercase; color:#034ea1; font-weight:bold; text-decoration:none;}
+body.mobile div.navBar li.navItem-03 a.textLinkBlack:after {content:none;}
+body.home div.navBar h1 {text-transform:uppercase; color:#034ea1; font-weight:bold; line-height: 60px; text-decoration:none;}
+
+
+/* --- PAGE STYLES - INNER PAGES --- */
+.pageContent {display: block; width:958px; border-left: 1px solid #aaaaaa; border-right: 1px solid #aaaaaa; margin: 0 auto; background-color: #ffffff;}
+.pageContentInner {position: relative; height: 100%;}
+
+
+
+/* --- PAGE STYLES - HOME --- */
+body.home .pageContent {width:100%; border:none; margin:65px 0 0 0;}
+body.home .column1 {display: block; width: 30%; position: absolute; top: -5px; left: 3%;}
+body.home .column2 {display: block; width: 30%; position: absolute; top: -5px; left: 35%;}
+body.home .column3 {display: block; width: 30%; position: absolute; top: -5px; left: 67%;}
+body.home .columnInner {display: block; width: 100%; position: relative;}
+
+body.home .lifestyle {display: block; width: 100%; height: 450px; position: absolute; top: 0; left: 0;}
+body.home .lifestyleTitle {display: block; width: 100%; background-color: #333333; background-color: rgba(0,0,0,.8); height: 200px; position: absolute; bottom: -150px; z-index:2;}
+body.home .lifestyleTitle:hover {bottom: 0; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease;}
+body.home .lifestyleTitle h2 {color: #ffffff; padding:15px 0 5px 15px; font-size:24px; line-height:24px;}
+body.home .lifestyleTitle p {color: #ffffff; padding:0 15px;}
+body.home .lifestyle a {position: absolute; top:0; left:0; right:0; bottom:0;}
+body.home .column1 .lifestyle {background: transparent url(images/lifestyle_highend.jpg) no-repeat 0 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;}
+body.home .column2 .lifestyle {background: transparent url(images/lifestyle_gamer.jpg) no-repeat 0 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;}
+body.home .column3 .lifestyle {background: transparent url(images/lifestyle_mobile.jpg) no-repeat 0 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;}
+body.home .lifestyleTitle a {position: relative !important;}
+
+body.home .article {display: block; width: 50%; height: 200px; position: absolute; top: 465px; left: 0; background-color:#e5e5e5; overflow:hidden;}
+body.home .articleInner {display: block; padding:15px; height: 200px; position: relative;}
+body.home .articleInner a {display: block; position: absolute; bottom: 45px; left: 15px;}
+body.home .articleDescription {display:none; height:0; color:#000;}
+body.home .article:hover {width: 50%; height:400px; top:265px; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; z-index:999; background-color: #e11c17; }
+body.home .article:hover h2 {color: #ffffff; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+body.home .article:hover .articleInner {height:400px;}
+body.home .article:hover .articleDescription {display:block; height: auto;}
+body.home .article:hover a.textLinkBlack {color:#000000 !important;}
+body.home .article:hover a.textLinkBlack::after {content: url(images/linkArrow_black.png) !important;}
+body.home .article:hover a.textLinkBlack:hover {color:#ffffff !important;}
+body.home .article:hover a.textLinkBlack:hover::after {content: url(images/linkArrow_white.png) !important;}
+
+
+
+body.home .video {display: block; width: 50%; height: 200px; position: absolute; top: 465px; left: 50%;}
+
+body.home .column1 .video {background: transparent url(images/video_screenshot01.jpg) no-repeat 0 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; overflow: hidden; position: relative;}
+body.home .column2 .video {background: transparent url(images/video_screenshot02.jpg) no-repeat 0 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; overflow: hidden; position: relative;}
+body.home .column3 .video {background: transparent url(images/video_screenshot03.jpg) no-repeat 0 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; overflow: hidden; position: relative;}
+
+body.home .video img.playButton {position: absolute; top:37%; left:37%; width: 26%; max-width:100px; min-width:50px; height: auto; z-index:2;}
+body.home .video .darken {position: absolute; top:0; left:0; right:0; bottom:0; background-color:rgba(0,0,0,0);z-index:1;}
+body.home .video .darken:hover {position: absolute; top:0; left:0; right:0; bottom:0; background-color:rgba(0,0,0,.7); cursor: pointer; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;}
+
+
+
+
+
+
+
+body.home .column2 .lifestyle {top: 215px;}
+body.home .column2 .article {top: 0;}
+body.home .column2 .video {top: 0;}
+
+
+/* --- HACKY STUFF --- */
+div.preloadArrows {display: block; height: 0; width: 0; position: absolute; left: -300px;}

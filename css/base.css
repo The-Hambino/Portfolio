@@ -32,6 +32,14 @@ a:hover, a:active {color: #0288D1;}
 	.divider-color         {border-color: #B6B6B6;}
 */
 
+/* Helper Classes */
+.float-left {float: left;}
+.float-right {float: right;}
+.constrain-150 {max-width: 150px;}
+.constrain-300 {max-width: 300px;}
+.clearfix:after {content: "."; visibility: hidden; display: block; height: 0; clear: both;}
+
+
 /* Header Navigation */
 .navbar {background: transparent url('../imgs/site-nav-bg.gif') 0 0 repeat; border-bottom: 15px solid #0288D1;}
 .navbar-toggle {background: #FFF; padding: 13px 12px; border-radius: 25px; margin: 15px 15px 0 0; border: 2px solid #CCC;}
@@ -100,7 +108,7 @@ footer .container {background: transparent url('../imgs/site-footer-bg.gif') top
 .contact-nav li a {border-radius: 8px;}
 
 /* Project Pages */
-#page img {max-width: 100%; position: relative; z-index: -1;}
+#page img {max-width: 100%; position: relative; z-index: 1;}
 #project .jumbotron {margin-bottom: 0;}
 #project h2 {text-align: center;}
 #project h2 span {padding: 0 15px; background-color: #fff; position: relative; z-index: 2; display: inline-block;}
