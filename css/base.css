@@ -35,7 +35,7 @@ a:hover, a:active {color: #0288D1;}
 /* Helper Classes */
 .float-left {float: left;}
 .float-right {float: right;}
-.constrain-150 {max-width: 150px;}
+.constrain-150 {max-width: 150px !important;}
 .constrain-300 {max-width: 300px;}
 .clearfix:after {content: "."; visibility: hidden; display: block; height: 0; clear: both;}
 
@@ -45,7 +45,7 @@ a:hover, a:active {color: #0288D1;}
 .navbar-toggle {background: #FFF; padding: 13px 12px; border-radius: 25px; margin: 15px 15px 0 0; border: 2px solid #CCC;}
 .navbar-toggle .icon-bar {background: #222; width: 20px; height: 3px;}
 .navbar-brand img {margin-left: -32px;}
-#navbar li {padding: 8px 0;}
+#navbar li {padding: 8px 0; margin: 0 5px;}
 #navbar li.divider {padding: 0; background-color:#0288D1;}
 #navbar li a,
 #navbar .dropdown button {font-weight: 700; color: #222; background: rgba(0,0,0,0);}
@@ -53,10 +53,16 @@ a:hover, a:active {color: #0288D1;}
 #navbar .dropdown {background-color: transparent;}
 #navbar .dropdown button {border: 0; padding: 8px 0; width: 100%; max-width: 100%;}
 #navbar .dropdown button:hover {background: rgba(255,255,255,1.0);}
-#navbar .dropdown.open {background-color: #fff;}
 #navbar .dropdown.open button {background-color: #fff;}
 #navbar .dropdown-menu li a {color: #03A9F4;}
 #navbar .dropdown-menu li a:hover {color: #0288D1;}
+#navbar .dropdown.open .dropdown-menu {background-color: #fff; border-radius: 15px; top: 4em; padding: 15px 0;}
+.dropdown-menu>li>a {padding: 3px 10px;}
+
+#navbar .dropdown.open .caret {display: inline-block; width: 0; height: 0; margin-left: 2px; vertical-align: middle; border-bottom: 4px dashed; border-bottom: 4px solid\9; border-right: 4px solid transparent; border-left: 4px solid transparent; border-top: none;}
+
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {max-height: none;}
 
 /* Intro Section */
 #intro.jumbotron {background-color: #03A9F4; color: #FFF;
@@ -137,6 +143,9 @@ footer .container {background: transparent url('../imgs/site-footer-bg.gif') top
 @media only screen and (max-width: 769px) {
 	#navbar li a ,
 	#navbar .dropdown {text-align: center;}
+	#navbar .dropdown.open .dropdown-menu {position: relative; z-index: 100; top: 1em; left: 10%; margin-bottom: 1em; width: 80%; height: auto; background-color: #fff; border-radius: 15px;}
+
+	
 	footer {text-align: center;}
 	.contact-nav {width: 100%;}
 	.contact-nav li {text-align: center;}
