@@ -35,10 +35,10 @@ a:hover, a:active {color: #0288D1;}
 /* Helper Classes */
 .float-left {float: left;}
 .float-right {float: right;}
+.spacer-15 {margin-bottom: 15px;}
 .constrain-150 {max-width: 150px !important;}
 .constrain-300 {max-width: 300px;}
-.clearfix:after {content: "."; visibility: hidden; display: block; height: 0; clear: both;}
-
+.t-center {text-align: center;}
 
 /* Header Navigation */
 .navbar {background: transparent url('../imgs/site-nav-bg.gif') 0 0 repeat; border-bottom: 15px solid #0288D1;}
@@ -88,6 +88,24 @@ a:hover, a:active {color: #0288D1;}
 #portfolio .tile.rwd {background: transparent url('../imgs/tile-rwd_725x200.jpg') top center no-repeat;}
 #portfolio .tile.ecommerce {background: transparent url('../imgs/tile-ecommerce_725x200.jpg') top center no-repeat;}
 #portfolio .tile.print {background: transparent url('../imgs/tile-print_725x200.jpg') top center no-repeat;}
+.text-tray .arrow-down {position: absolute; bottom: 15px; left: 50%; margin-left: -20px;}
+.arrow-down {width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 20px solid #03A9F4;}
+.arrow-down:hover {border-top-color: #fff;}
+
+/* Portfolio Preview Section */
+#portfolio-content {margin-bottom: 15px;}
+#portfolio-content .tile {background-color: #fff; border: 1px solid #eee; padding: 30px;}
+
+.hide-content {max-height: 0; opacity: 0;}
+.show-content {max-height: 1500px; opacity: 1; transition: max-height .5s ease, opacity .25s linear;}
+
+#portfolio .tile a.link-open .text-tray {margin-top: -198px;}
+#portfolio .tile a.link-open .arrow-down {border-bottom: 20px solid #03A9F4; border-top: 20px solid transparent;}
+#portfolio .tile a.link-open .arrow-down:hover {border-bottom-color: #fff;}
+.portfolio-open {min-height: 400px;}
+
+.mobile-link  {display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,0.75); color: #fff;}
+.mobile-link h3 {margin-top: 75px !important;}
 
 /* Resume Section */
 #resume .tile {margin-bottom: 15px; border: 1px solid #EEE; text-align: left; min-height: 200px; display: table; vertical-align: middle; width: 100%; background: transparent url('../imgs/tile-resume_1140x215.jpg') center center no-repeat;}
@@ -103,7 +121,7 @@ a:hover, a:active {color: #0288D1;}
 .show-resume .resume-content img {opacity: 1;}
 
 /* About */
-#about #page img {width: 100%;}
+#about #page img {width: 100%; max-width: 300px;}
 
 /* Footer */
 footer {background: transparent url('../imgs/site-footer-bg-repeat.gif') 0 0 repeat-x; margin: 15px 0;}
@@ -154,6 +172,14 @@ footer .container {background: transparent url('../imgs/site-footer-bg.gif') top
 	.banner-container img {position: relative; top: 0; left: -25%;}
 }
 
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	#portfolio .rwd .text-tray {margin-top: -78px;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	#ecommerce-content .tile h3,
+	#print-content .tile h3 {clear: right;}
+}
 
 @media only screen and (max-width: 500px) {
 
