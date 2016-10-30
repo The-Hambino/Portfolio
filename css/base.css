@@ -121,7 +121,31 @@ a:hover, a:active {color: #0288D1;}
 .show-resume .resume-content img {opacity: 1;}
 
 /* About */
+.divider {border-top: 1px solid #eee; margin-top: 30px; padding-top: 30px;}
 #about #page img {width: 100%; max-width: 300px;}
+.contact-me {}
+.contact-me ul {list-style: none; padding: 0;}
+.contact-me ul li {
+	display: inline-block;
+	margin: 0 15px 0 0;
+	}
+.contact-me ul a {
+	padding: 0.33em 0.66em;
+    display: inline-block;
+    color: #03A9F4;
+    font-weight: 400;
+    margin: 15px 0 0 0;
+    white-space: nowrap;
+    border: 2px solid #03A9F4;
+    border-radius: 5px;
+	}
+.contact-me ul a:hover {
+	color: #0288D1;
+	text-decoration: none;
+	border: 2px solid #0288D1;
+	background-color: #eee;
+	}
+
 
 /* Footer */
 footer {background: transparent url('../imgs/site-footer-bg-repeat.gif') 0 0 repeat-x; margin: 15px 0;}
